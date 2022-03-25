@@ -76,16 +76,24 @@ enableEmoji = true
         title = ""
         weight = 4
       [[languages.en.menu.main]]
+        identifier = "portfolio"
+        pre = ""
+        post = ""
+        name = "Portfolio"
+        url = "https://kehanmeng.com"
+        title = ""
+        weight = 5
+      [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
         url = "https://github.com/code-panda-x"
         title = "GitHub"
-        weight = 5
+        weight = 6
     [languages.en.params]
       # site description
-      description = "A Site about Tech, Life, and Productivity"
+      description = "A Blog about Tech, Life, and Productivity"
       # site keywords
       keywords = ["Blog", "Hugo", "Tech", "Life", "Productivity"]
       # App icon config

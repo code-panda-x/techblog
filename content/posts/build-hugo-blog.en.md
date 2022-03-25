@@ -137,40 +137,78 @@ $ git status
 
 ## Deploy on Netlify
 
+Add `netlify.toml` file to your blog:
+```
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
+[context.production.environment]
+HUGO_VERSION = "0.93.0"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
+
+[context.split1.environment]
+HUGO_VERSION = "0.93.0"
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.93.0"
+
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.93.0"
+
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+from = "/npmjs/*"
+to = "/npmjs/"
+status = 200
+```
+
 1. Sign in Netlify with GitHub account
 2. Add new site - Import an existing project
 3. Select your GitHub repo
 4. Your site will be pubished with a netlify domain
 
-## Deploy on GitHub Page
 
-Your site will be published on `your-github-username.github.io`
-
-## Customize Domain
+### Customize Domain
 
 1. Purchase your domain at Godaddy.com or namecheap.com
-2. Configuration
+2. Netlify Configuration
+   Domains - Custom domains - Add custom domain - Enter your purchased domain
 
 ### DNS Management 
-#### Netlify
 Add:
 1. Type: `A` Name: `@` Value: `75.2.60.5` (Netlify’s load balancer IP address)
 2. Type: `CNAME` Name: `www` Value: `your-url.netlify.app`
 
-#### GitHub Page
 
+## Deploy on GitHub Page
+
+Your site will be published on `your-github-username.github.io`
+
+### Customize Domain
+
+1. Purchase your domain at Godaddy.com or namecheap.com
+2. GitHub Page Configuration
+   Settings - Code and automation - Custom domain - Enter your purchased domain
+
+### DNS Management 
 Add:
 1. Type: `A` Name: `@` Value: `185.199.108.153` 
 2. Type: `CNAME` Name: `www` Value: `your-github-username.github.io`
 
----
-
-### Host Settings
-#### Netlify
-Domains - Custom domains - Add custom domain - Enter your purchased domain
-
-#### GitHub Page
-Settings - Code and automation - Custom domain - Enter your purchased domain
 
 ---
 
