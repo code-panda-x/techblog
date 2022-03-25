@@ -68,34 +68,26 @@ enableEmoji = true
         title = ""
         weight = 3
       [[languages.en.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
-      [[languages.en.menu.main]]
         identifier = "about"
         pre = ""
         post = ""
         name = "About"
         url = "/about/"
         title = ""
-        weight = 5
+        weight = 4
       [[languages.en.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
         post = ""
         name = ""
-        url = "https://github.com/dillonzq/LoveIt"
+        url = "https://github.com/code-panda-x"
         title = "GitHub"
-        weight = 6
+        weight = 5
     [languages.en.params]
       # site description
-      description = "About LoveIt Theme"
+      description = "A Site about Tech, Life, and Productivity"
       # site keywords
-      keywords = ["Theme", "Hugo"]
+      keywords = ["Blog", "Hugo", "Tech", "Life", "Productivity"]
       # App icon config
       [languages.en.params.app]
         # optional site title override for the app when added to an iOS home screen or Android launcher
@@ -159,15 +151,15 @@ enableEmoji = true
           paginate = 6
       # Social config in home page
       [languages.en.params.social]
-        GitHub = "xxxx"
-        Linkedin = ""
-        Twitter = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
+        GitHub = "https://github.com/code-panda-x"
+        Linkedin = "https://www.linkedin.com/in/kehan-meng/"
+        Twitter = ""
+        Instagram = ""
+        Facebook = ""
+        Telegram = ""
         Medium = ""
         Gitlab = ""
-        Youtubelegacy = "xxxx"
+        Youtubelegacy = ""
         Youtubecustom = ""
         Youtubechannel = ""
         Tumblr = ""
@@ -220,11 +212,11 @@ enableEmoji = true
         XMPP = ""
         Matrix = ""
         Bilibili = ""
-        Email = "xxxx@xxxx.com"
+        Email = "alexkehanmeng@gmail.com"
         RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
+        #[languages.en.params.social.Mastodon]
+        #  id = "@xxxx"
+        #  prefix = "https://mastodon.technology/"
 
   [languages.zh-cn]
     weight = 2
@@ -269,20 +261,13 @@ enableEmoji = true
         title = ""
         weight = 3
       [[languages.zh-cn.menu.main]]
-        identifier = "documentation"
-        pre = ""
-        name = "文档"
-        url = "/categories/documentation/"
-        title = ""
-        weight = 4
-      [[languages.zh-cn.menu.main]]
         identifier = "about"
         pre = ""
         post = ""
         name = "关于"
         url = "/about/"
         title = ""
-        weight = 5
+        weight = 4
       [[languages.zh-cn.menu.main]]
         identifier = "github"
         pre = "<i class='fab fa-github fa-fw'></i>"
@@ -290,7 +275,7 @@ enableEmoji = true
         name = ""
         url = "https://github.com/dillonzq/LoveIt"
         title = "GitHub"
-        weight = 6
+        weight = 5
     [languages.zh-cn.params]
       # 网站描述
       description = "关于 LoveIt 主题"
@@ -345,7 +330,7 @@ enableEmoji = true
           # 主页显示的网站标题 (支持 HTML 格式)
           title = ""
           # 主页显示的网站副标题
-          subtitle = "一个简洁、优雅且高效的 Hugo 主题"
+          subtitle = "爱音乐，觅自由，边缘，独立，不妥协"
           # 是否为副标题显示打字机动画
           typeit = true
           # 是否显示社交账号
