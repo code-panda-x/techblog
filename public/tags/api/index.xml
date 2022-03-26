@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>API - Tag - PandaX</title>
+        <link>https://pandax.me/tags/api/</link>
+        <description>API - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Mar 2022 18:05:22 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/api/" rel="self" type="application/rss+xml" /><item>
+    <title>What is API</title>
+    <link>https://pandax.me/what-is-api/</link>
+    <pubDate>Tue, 01 Mar 2022 18:05:22 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-api/</guid>
+    <description><![CDATA[What is API Application Programming Interface: allows two applications to talk to each other
+What is REST API REST (Representational State Transfer): A set of functions for developers to perform requests and receive responses using HTTP protocol
+Challenges under API testing  API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens)  Core components of HTTP request  HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content)  What is Payload  Payload/body is secured input data sent to API In JSON  What is JSON  JavaScript Object Notation Data format represented as String-text  Authentication Techniques used in API&rsquo;s  Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth  Why API testing is suitable for automation testing API testing is:]]></description>
+</item><item>
+    <title>Rest API with Express.JS</title>
+    <link>https://pandax.me/express-restapi/</link>
+    <pubDate>Sun, 20 Feb 2022 13:37:22 -0600</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/express-restapi/</guid>
+    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken');  Inlucde route/file: 1 2 3 4  // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB();   File return 1 2  module.exports = connectDB; module.exports = router;   Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13  const connectDB = async () =&gt; { try{ await mongoose.]]></description>
+</item></channel>
+</rss>

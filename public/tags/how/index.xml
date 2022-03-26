@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>How - Tag - PandaX</title>
+        <link>https://pandax.me/tags/how/</link>
+        <description>How - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 30 Jan 2022 21:57:04 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/how/" rel="self" type="application/rss+xml" /><item>
+    <title>How Data Are Stored</title>
+    <link>https://pandax.me/how-data-are-stored/</link>
+    <pubDate>Sun, 30 Jan 2022 21:57:04 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/how-data-are-stored/</guid>
+    <description><![CDATA[How data are ACTUALLY sotred? In a nutshell: All data are stored as 1&rsquo;s and 0&rsquo;s, 1 and 0 are represented by high/low voltage of transistors.
+ Brief Introduction Data are stored in bits, neither binary nor hex. They are both representations of data.
+Computer only identifies voltage levels. There will be some voltage for 1 (high) and some lower voltage for 0 (low). When ever high voltage is passed its 1 and other one is 0.]]></description>
+</item><item>
+    <title>How to run a program from scratch</title>
+    <link>https://pandax.me/how-to-run-program/</link>
+    <pubDate>Sat, 11 Dec 2021 21:29:23 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/how-to-run-program/</guid>
+    <description><![CDATA[This might be a stupid question for a programmer who has years of programming experience. But when I first started programming, I have no clue how to run a program. I simply followed my professor&rsquo;s instruction: downloaded codeblocks/visual studio, typed in some code, and I could run my program magically! Back in the days, I did&rsquo;t understand what an IDE means, how program compiles inside the IDE, why the code is layed out in certain ways, etc.]]></description>
+</item></channel>
+</rss>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>C# CheatSheet - PandaX</title><meta name="Description" content="Questions regarding C# &amp; ASP.NET"><meta property="og:title" content="C# CheatSheet" />
+<meta property="og:description" content="Questions regarding C# &amp; ASP.NET" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pandax.me/c-sharp-cheatsheet/" /><meta property="og:image" content="https://pandax.me/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-25T13:39:38-05:00" />
+<meta property="article:modified_time" content="2021-08-25T13:39:38-05:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://pandax.me/logo.png"/>
+
+<meta name="twitter:title" content="C# CheatSheet"/>
+<meta name="twitter:description" content="Questions regarding C# &amp; ASP.NET"/>
+<meta name="application-name" content="PandaX">
+<meta name="apple-mobile-web-app-title" content="PandaX"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://pandax.me/c-sharp-cheatsheet/" /><link rel="prev" href="https://pandax.me/python-cheatsheet/" /><link rel="next" href="https://pandax.me/what-happens-when-run-program/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "C# CheatSheet",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/pandax.me\/c-sharp-cheatsheet\/"
+        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "C#, Programming, ASP.NET","wordcount":  935 ,
+        "url": "https:\/\/pandax.me\/c-sharp-cheatsheet\/","datePublished": "2021-08-25T13:39:38-05:00","dateModified": "2021-08-25T13:39:38-05:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/pandax.me\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Kehan"
+            },"description": "Questions regarding C# \u0026 ASP.NET"
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="PandaX"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>PandaX</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://kehanmeng.com" rel="noopener noreffer" target="_blank"> Portfolio </a><a class="menu-item" href="https://github.com/code-panda-x" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/c-sharp-cheatsheet/" selected>English</option></select>
+                    </a><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="PandaX"><span class="header-title-pre"><i class='far fa-kiss-wink-heart fa-fw'></i></span>PandaX</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://kehanmeng.com" title="" rel="noopener noreffer" target="_blank">Portfolio</a><a class="menu-item" href="https://github.com/code-panda-x" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
+                    <select class="language-select" onchange="location = this.value;"><option value="/c-sharp-cheatsheet/" selected>English</option></select>
+                </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">C# CheatSheet</h1><h2 class="single-subtitle">Questions regarding C# &amp; ASP.NET</h2><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/programming-language/"><i class="far fa-folder fa-fw"></i>Programming Language</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-08-25">2021-08-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;935 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;5 minutes&nbsp;<span id="/c-sharp-cheatsheet/" class="leancloud_visitors" data-flag-title="C# CheatSheet">
+                        <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
+                    </span>&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#difference-between-c-and-net">Difference between C# and .Net</a></li>
+        <li><a href="#net-framwork4x-vs-net-core3x-vs-net-50">.Net framwork4.X vs .Net Core3.X vs .Net 5.0</a></li>
+        <li><a href="#what-is-il-code--what-is-the-use-of-jit">What is IL code &amp;&amp; What is the use of JIT?</a></li>
+        <li><a href="#what-is-clr">What is CLR</a></li>
+        <li><a href="#garbage-collector">Garbage collector</a></li>
+        <li><a href="#cts">CTS</a></li>
+        <li><a href="#cls">CLS</a></li>
+        <li><a href="#stack-vs-heap">Stack vs Heap</a></li>
+        <li><a href="#value-type-vs-reference-type">Value type vs Reference type</a></li>
+        <li><a href="#casting">Casting</a></li>
+        <li><a href="#generic-collections">Generic collections</a></li>
+        <li><a href="#advantages-of-using-c">Advantages of using C#</a></li>
+        <li><a href="#code-compilation-in-c">Code compilation in C#</a></li>
+        <li><a href="#access-modifers-in-c">Access modifers in C</a></li>
+        <li><a href="#passing-parameters-to-a-method">Passing parameters to a method</a></li>
+        <li><a href="#difference-between-finally-and-finalize-block">Difference between finally and finalize block</a></li>
+        <li><a href="#managed-code-vs-unmanaged-code">Managed code vs Unmanaged code</a></li>
+        <li><a href="#define-sealed-class">Define Sealed class</a></li>
+        <li><a href="#define-a-partial-class">Define a partial class</a></li>
+        <li><a href="#streamreaderstreamwrite-class">StreamReader/StreamWrite class</a></li>
+        <li><a href="#class-vs-struct">Class vs Struct</a></li>
+        <li><a href="#virtual-vs-abstract-method">Virtual vs Abstract method</a></li>
+        <li><a href="#namespaces">Namespaces</a></li>
+        <li><a href="#boxing-and-unboxing">Boxing and Unboxing</a></li>
+        <li><a href="#jagged-array">Jagged Array</a></li>
+        <li><a href="#array-vs-arraylist">Array vs ArrayList</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#serialization">Serialization</a></li>
+        <li><a href="#parsing">Parsing</a></li>
+        <li><a href="#delegate">Delegate</a></li>
+        <li><a href="#systemstring-vs-systemtextstringbuilder">System.String vs System.Text.StringBuilder</a></li>
+        <li><a href="#systemarraycopyto-vs-systemarrayclone">System.Array.CopyTo() vs System.Array.Clone()</a></li>
+        <li><a href="#trycatch">Try&hellip;Catch&hellip;</a></li>
+        <li><a href="#generics-in-cnet">Generics in C#.Net</a></li>
+        <li><a href="#finalize-vs-dispose">Finalize vs dispose()</a></li>
+        <li><a href="#thread">Thread</a></li>
+        <li><a href="#task">Task</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#synchronous-and-asynchronous-operations">Synchronous and Asynchronous Operations</a></li>
+        <li><a href="#async-and-await-for-creating-asynchronous-methods">Async and Await (For creating Asynchronous methods)</a></li>
+        <li><a href="#deadlock">Deadlock</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="difference-between-c-and-net">Difference between C# and .Net</h3>
+<p>C# is a programming language</p>
+<p>.Net is a framework that can run C# application</p>
+<ol>
+<li>It is a collections of library</li>
+<li>It has a CLR</li>
+</ol>
+<h3 id="net-framwork4x-vs-net-core3x-vs-net-50">.Net framwork4.X vs .Net Core3.X vs .Net 5.0</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">            .Net framework      .Net Core           
+</span></span><span class="line"><span class="cl">Platform    Windows             Cross-platform      
+</span></span><span class="line"><span class="cl">Performance Slow                Better
+</span></span><span class="line"><span class="cl">CLI         IDE based           Full CLI command supported (Run CMD)
+</span></span><span class="line"><span class="cl">Packaging   One big framework   Delivered via modularly using Nuget
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">.Net5.0 is a unified platform
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="what-is-il-code--what-is-the-use-of-jit">What is IL code &amp;&amp; What is the use of JIT?</h3>
+<p>IL: Intermediate language code (partial compiled code)
+JIT: Just in time compiler</p>
+<pre><code>Source Code --&gt; IL --(JIT)--&gt; Machine code
+</code></pre>
+<p>Benefit: For different runtime and dev environment, JIT compiles the best optimized code for that environment</p>
+<h3 id="what-is-clr">What is CLR</h3>
+<p>CLR: common language runtime</p>
+<ol>
+<li>CLR invokes JIT to convert IL code to machine language</li>
+<li>Cleans unused objects by using garbage collector</li>
+</ol>
+<h3 id="garbage-collector">Garbage collector</h3>
+<p>Background process which cleans Unused Managed resources
+Cannot clean unmanaged recources</p>
+<h3 id="cts">CTS</h3>
+<p>Common types system ensures that data types defined in two different languages gets compiled to a common data type</p>
+<h3 id="cls">CLS</h3>
+<p>Common language specifications
+A set of guidelines that make any language following .NET specifications (Case sensitive)</p>
+<h3 id="stack-vs-heap">Stack vs Heap</h3>
+<p>Stack stores primitive data types (int ,boolean, double)
+Heap stores objects</p>
+<p><strong>Stack handles function calls</strong></p>
+<h3 id="value-type-vs-reference-type">Value type vs Reference type</h3>
+<p>Value types (contains actual data like int a = 0) are stores on stack
+Reference types (contains pointers and the pointers point to the actual data)are stored on heap</p>
+<h3 id="casting">Casting</h3>
+<p>Explicit casting:(lower to higher type)
+int y = (int)d;
+Implicit casting:(lower to higher type)
+int i = 1;
+double d = i;</p>
+<h3 id="generic-collections">Generic collections</h3>
+<p>Strongly typed and flexible
+List<int> geneint = new List<int>();
+geneit.Add(1);</p>
+<hr>
+<h3 id="advantages-of-using-c">Advantages of using C#</h3>
+<ol>
+<li>Simple &amp; fast</li>
+<li>High scalability</li>
+<li>No buffering</li>
+<li>Cross plaforms</li>
+</ol>
+<h3 id="code-compilation-in-c">Code compilation in C#</h3>
+<ol>
+<li>Compliation of Source code</li>
+<li>Clubbing newly created code (Test code and funtion code)</li>
+<li>Executing assembly</li>
+<li>CLR (Common language runtime)</li>
+</ol>
+<h3 id="access-modifers-in-c">Access modifers in C</h3>
+<ol>
+<li>Public: it can be accessed by every part of the code</li>
+<li>Private: it only can be accessed within the class</li>
+<li>Protected: it only can be accessed within the class and the inheriting class (parent and child class)</li>
+<li>Internal: it can be accessed in the class at the current assembly position</li>
+</ol>
+<h3 id="passing-parameters-to-a-method">Passing parameters to a method</h3>
+<ol>
+<li>Value parameters (not affect original value)</li>
+<li>Reference parameters (affect original value)</li>
+<li>Output parameters (returns more than one value)</li>
+</ol>
+<h3 id="difference-between-finally-and-finalize-block">Difference between finally and finalize block</h3>
+<ol>
+<li>Final block is called after try catch blocks (not dependent on the exception handling)</li>
+<li>Finalize method is called just before garbage collection (cleanup operation for unmanaged code)</li>
+</ol>
+<h3 id="managed-code-vs-unmanaged-code">Managed code vs Unmanaged code</h3>
+<p>Managed code:</p>
+<ol>
+<li>Executed by CLR</li>
+<li>ALl the application code is dependent on .Net platform</li>
+</ol>
+<p>Unmanaged code:</p>
+<ol>
+<li>Executed by runtime application of some other structure</li>
+<li>The runtime application deals with memory, security and other execution activities</li>
+</ol>
+<h3 id="define-sealed-class">Define Sealed class</h3>
+<p>Created when you want to restrict the class being inherited</p>
+<h3 id="define-a-partial-class">Define a partial class</h3>
+<ol>
+<li>Make use of suplit function</li>
+<li>Splits the definition of the class into multiple classes in same file or multiple files</li>
+<li>One can create a class definition in multiple files but it is compiled as one class at run-time</li>
+<li>User can create object of partial class and access all the methods from every source file</li>
+</ol>
+<h3 id="streamreaderstreamwrite-class">StreamReader/StreamWrite class</h3>
+<pre><code>StreamReader sr = new StreamReader(&quot;C: Readme.txt&quot;)
+StreamWriter sr = new StreamWriter(&quot;C: Readme.txt&quot;)
+</code></pre>
+<h3 id="class-vs-struct">Class vs Struct</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/class-vs-struct.png"
+        data-srcset="/images/class-vs-struct.png, /images/class-vs-struct.png 1.5x, /images/class-vs-struct.png 2x"
+        data-sizes="auto"
+        alt="/images/class-vs-struct.png"
+        title="class-vs-struct.png" /></p>
+<h3 id="virtual-vs-abstract-method">Virtual vs Abstract method</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/virtual-vs-abstract.png"
+        data-srcset="/images/virtual-vs-abstract.png, /images/virtual-vs-abstract.png 1.5x, /images/virtual-vs-abstract.png 2x"
+        data-sizes="auto"
+        alt="/images/virtual-vs-abstract.png"
+        title="virtual-vs-abstract.png" /></p>
+<h3 id="namespaces">Namespaces</h3>
+<p>Used for organizing large code projects</p>
+<h3 id="boxing-and-unboxing">Boxing and Unboxing</h3>
+<p>Converting a value type to reference type is called boxing
+int value = 10
+// Boxing:
+Object boxedvalue = value1;</p>
+<pre><code>// Unboxing:
+int Unboxing = int(boxedvalue)
+</code></pre>
+<h3 id="jagged-array">Jagged Array</h3>
+<p>Array of arrays</p>
+<pre><code>Int[][] Jagarr = new[5][5];
+</code></pre>
+<h3 id="array-vs-arraylist">Array vs ArrayList</h3>
+<p>int [] arr = {1,2};
+ArrayList list = new ArrayList();</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/array-vs-arraylist.png"
+        data-srcset="/images/array-vs-arraylist.png, /images/array-vs-arraylist.png 1.5x, /images/array-vs-arraylist.png 2x"
+        data-sizes="auto"
+        alt="/images/array-vs-arraylist.png"
+        title="array-vs-arraylist.png" /></p>
+<h3 id="collections">Collections</h3>
+<p>A collection works like a container for instances of other classes, every class implements collection interface</p>
+<h3 id="serialization">Serialization</h3>
+<p>Process that involves converting some code into its binary format</p>
+<ol>
+<li>Binay Serialization</li>
+<li>XML Serialization</li>
+<li>SOAP</li>
+</ol>
+<h3 id="parsing">Parsing</h3>
+<pre><code>String text = &quot;200&quot;
+int.num = int.Parse(text)
+</code></pre>
+<h3 id="delegate">Delegate</h3>
+<p>A delegate is a variable that holds the reference to a method
+Useful to communicate between threads
+It&rsquo;s a function pointer of the reference type</p>
+<pre><code>public Delegate int myDel(int number)
+public int SubstractNum(int a) // Substract a by 10, return an int
+// In public void start()
+myDel DelegateExample = SubstractNum; // Holds the reference to a method
+</code></pre>
+<h3 id="systemstring-vs-systemtextstringbuilder">System.String vs System.Text.StringBuilder</h3>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/string-vs-builder.png"
+        data-srcset="/images/string-vs-builder.png, /images/string-vs-builder.png 1.5x, /images/string-vs-builder.png 2x"
+        data-sizes="auto"
+        alt="/images/string-vs-builder.png"
+        title="string-vs-builder.png" /></p>
+<h3 id="systemarraycopyto-vs-systemarrayclone">System.Array.CopyTo() vs System.Array.Clone()</h3>
+<p>Clone(): A new array obj is created with all elements</p>
+<p>CopyTo(): All the elements get copied into another existing array</p>
+<h3 id="trycatch">Try&hellip;Catch&hellip;</h3>
+<pre><code>try
+{
+    int y = 0;
+    int z = 1 / y;
+}
+catch(Exception ex) // parameter type is system.Exception
+{
+    // do something
+}
+</code></pre>
+<h3 id="generics-in-cnet">Generics in C#.Net</h3>
+<ol>
+<li>Used to make reusable code classes that decrease code redundancy</li>
+<li>Increase type safety, performance and optimization</li>
+<li>Generics create collection</li>
+</ol>
+<h3 id="finalize-vs-dispose">Finalize vs dispose()</h3>
+<p>Dispose releases unmanaged resources</p>
+<p>Finalize doesn&rsquo;t assure garbage collection (it releases unmanaged resources too)</p>
+<h3 id="thread">Thread</h3>
+<p>Thread: is a set of instructions that when executed enables the program to perform concurrent processing. Thread terminates immediately after execution</p>
+<p>Multithreading: Execute more than one process/task at a time</p>
+<p>Parallel execution:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Thread t = new Thread(Method1);
+</span></span><span class="line"><span class="cl">t.Start();
+</span></span><span class="line"><span class="cl">Thread t1 = new Thread(Method2);
+</span></span><span class="line"><span class="cl">t1.Start();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="task">Task</h3>
+<p>TPL: Task parallel Library</p>
+<ol>
+<li>Parallel processing</li>
+<li>Pooling threads</li>
+<li>Perform actions with a task</li>
+</ol>
+<h3 id="events">Events</h3>
+<p>Encapsulated delegate
+public Delegate void TestEvent();
+public TestEvent TestEvent1</p>
+<h3 id="synchronous-and-asynchronous-operations">Synchronous and Asynchronous Operations</h3>
+<p>S: only a single thread will access in a given time
+S call waits for completion of method and then continuous the program flow</p>
+<p>A: the method call immediately returns allowing the program to perform other operations</p>
+<h3 id="async-and-await-for-creating-asynchronous-methods">Async and Await (For creating Asynchronous methods)</h3>
+<p>///</p>
+<h3 id="deadlock">Deadlock</h3>
+<p>///</p>
+<hr>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-08-25</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/c-sharp-cheatsheet/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://pandax.me/c-sharp-cheatsheet/" data-title="C# CheatSheet" data-hashtags="C#,Programming,ASP.NET"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://pandax.me/c-sharp-cheatsheet/" data-hashtag="C#"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://pandax.me/c-sharp-cheatsheet/" data-title="C# CheatSheet"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://pandax.me/c-sharp-cheatsheet/" data-title="C# CheatSheet"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://pandax.me/c-sharp-cheatsheet/" data-title="C# CheatSheet"><i class="fab fa-weibo fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=""></a>,&nbsp;<a href="/tags/programming/">Programming</a>,&nbsp;<a href="/tags/asp.net/">ASP.NET</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/python-cheatsheet/" class="prev" rel="prev" title="Python CheatSheet"><i class="fas fa-angle-left fa-fw"></i>Python CheatSheet</a>
+            <a href="/what-happens-when-run-program/" class="next" rel="next" title="What happens when you run your program">What happens when you run your program<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"><div id="valine" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.95.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/valine/valine.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/algoliasearch@4.2.0/dist/algoliasearch-lite.umd.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{"valine":{"appId":"QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI","appKey":"WBmoGyJtbqUswvfLh6L8iEBr","avatar":"mp","el":"#valine","emojiCDN":"https://cdn.jsdelivr.net/npm/emoji-datasource-google@5.0.1/img/google/64/","emojiMaps":{"100":"1f4af.png","alien":"1f47d.png","anger":"1f4a2.png","angry":"1f620.png","anguished":"1f627.png","astonished":"1f632.png","black_heart":"1f5a4.png","blue_heart":"1f499.png","blush":"1f60a.png","bomb":"1f4a3.png","boom":"1f4a5.png","broken_heart":"1f494.png","brown_heart":"1f90e.png","clown_face":"1f921.png","cold_face":"1f976.png","cold_sweat":"1f630.png","confounded":"1f616.png","confused":"1f615.png","cry":"1f622.png","crying_cat_face":"1f63f.png","cupid":"1f498.png","dash":"1f4a8.png","disappointed":"1f61e.png","disappointed_relieved":"1f625.png","dizzy":"1f4ab.png","dizzy_face":"1f635.png","drooling_face":"1f924.png","exploding_head":"1f92f.png","expressionless":"1f611.png","face_vomiting":"1f92e.png","face_with_cowboy_hat":"1f920.png","face_with_hand_over_mouth":"1f92d.png","face_with_head_bandage":"1f915.png","face_with_monocle":"1f9d0.png","face_with_raised_eyebrow":"1f928.png","face_with_rolling_eyes":"1f644.png","face_with_symbols_on_mouth":"1f92c.png","face_with_thermometer":"1f912.png","fearful":"1f628.png","flushed":"1f633.png","frowning":"1f626.png","ghost":"1f47b.png","gift_heart":"1f49d.png","green_heart":"1f49a.png","grimacing":"1f62c.png","grin":"1f601.png","grinning":"1f600.png","hankey":"1f4a9.png","hear_no_evil":"1f649.png","heart":"2764-fe0f.png","heart_decoration":"1f49f.png","heart_eyes":"1f60d.png","heart_eyes_cat":"1f63b.png","heartbeat":"1f493.png","heartpulse":"1f497.png","heavy_heart_exclamation_mark_ornament":"2763-fe0f.png","hole":"1f573-fe0f.png","hot_face":"1f975.png","hugging_face":"1f917.png","hushed":"1f62f.png","imp":"1f47f.png","innocent":"1f607.png","japanese_goblin":"1f47a.png","japanese_ogre":"1f479.png","joy":"1f602.png","joy_cat":"1f639.png","kiss":"1f48b.png","kissing":"1f617.png","kissing_cat":"1f63d.png","kissing_closed_eyes":"1f61a.png","kissing_heart":"1f618.png","kissing_smiling_eyes":"1f619.png","laughing":"1f606.png","left_speech_bubble":"1f5e8-fe0f.png","love_letter":"1f48c.png","lying_face":"1f925.png","mask":"1f637.png","money_mouth_face":"1f911.png","nauseated_face":"1f922.png","nerd_face":"1f913.png","neutral_face":"1f610.png","no_mouth":"1f636.png","open_mouth":"1f62e.png","orange_heart":"1f9e1.png","partying_face":"1f973.png","pensive":"1f614.png","persevere":"1f623.png","pleading_face":"1f97a.png","pouting_cat":"1f63e.png","purple_heart":"1f49c.png","rage":"1f621.png","relaxed":"263a-fe0f.png","relieved":"1f60c.png","revolving_hearts":"1f49e.png","right_anger_bubble":"1f5ef-fe0f.png","robot_face":"1f916.png","rolling_on_the_floor_laughing":"1f923.png","scream":"1f631.png","scream_cat":"1f640.png","see_no_evil":"1f648.png","shushing_face":"1f92b.png","skull":"1f480.png","skull_and_crossbones":"2620-fe0f.png","sleeping":"1f634.png","sleepy":"1f62a.png","slightly_frowning_face":"1f641.png","slightly_smiling_face":"1f642.png","smile":"1f604.png","smile_cat":"1f638.png","smiley":"1f603.png","smiley_cat":"1f63a.png","smiling_face_with_3_hearts":"1f970.png","smiling_imp":"1f608.png","smirk":"1f60f.png","smirk_cat":"1f63c.png","sneezing_face":"1f927.png","sob":"1f62d.png","space_invader":"1f47e.png","sparkling_heart":"1f496.png","speak_no_evil":"1f64a.png","speech_balloon":"1f4ac.png","star-struck":"1f929.png","stuck_out_tongue":"1f61b.png","stuck_out_tongue_closed_eyes":"1f61d.png","stuck_out_tongue_winking_eye":"1f61c.png","sunglasses":"1f60e.png","sweat":"1f613.png","sweat_drops":"1f4a6.png","sweat_smile":"1f605.png","thinking_face":"1f914.png","thought_balloon":"1f4ad.png","tired_face":"1f62b.png","triumph":"1f624.png","two_hearts":"1f495.png","unamused":"1f612.png","upside_down_face":"1f643.png","weary":"1f629.png","white_frowning_face":"2639-fe0f.png","white_heart":"1f90d.png","wink":"1f609.png","woozy_face":"1f974.png","worried":"1f61f.png","yawning_face":"1f971.png","yellow_heart":"1f49b.png","yum":"1f60b.png","zany_face":"1f92a.png","zipper_mouth_face":"1f910.png","zzz":"1f4a4.png"},"enableQQ":false,"highlight":true,"lang":"en","pageSize":10,"placeholder":"Your comment ...","recordIP":true,"serverURLs":"https://leancloud.hugoloveit.com","visitor":true}},"search":{"algoliaAppID":"PASDMWALPK","algoliaIndex":"index.en","algoliaSearchKey":"b42948e51daaa93df92381c8e2ac0f93","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"}};</script><script type="text/javascript" src="/js/theme.min.js"></script><script type="text/javascript">
+            window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+            gtag('config', 'G-VPXSQWTFKX', { 'anonymize_ip': true });
+        </script><script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-VPXSQWTFKX" async></script></body>
+</html>

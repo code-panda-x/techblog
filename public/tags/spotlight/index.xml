@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Spotlight - Tag - PandaX</title>
+        <link>https://pandax.me/tags/spotlight/</link>
+        <description>Spotlight - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Mar 2022 11:45:57 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/spotlight/" rel="self" type="application/rss+xml" /><item>
+    <title>Enable Spotlight search on Mac</title>
+    <link>https://pandax.me/enable-spotlight/</link>
+    <pubDate>Sat, 26 Mar 2022 11:45:57 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/enable-spotlight/</guid>
+    <description><![CDATA[Method 1 Navigate to
+ System Preferences Spotlights Privacy Add your local disk to the list Remove your local disk from the list The above steps will reindex spotlight on the selected disk  Method 2 In terminal run:
+1 2  sudo mdutil -E / sudo mdutil -a -i on   Above commands fixed everything for me]]></description>
+</item></channel>
+</rss>

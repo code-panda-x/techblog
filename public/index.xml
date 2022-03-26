@@ -2,18 +2,104 @@
     <channel>
         <title>PandaX</title>
         <link>https://pandax.me/</link>
-        <description>A Site about Tech, Life, and Productivity</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 22 Jun 2021 13:46:52 -0500</lastBuildDate>
+        <description>A Blog about Tech, Life, and Productivity</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 26 Mar 2022 11:45:57 -0500</lastBuildDate>
             <atom:link href="https://pandax.me/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Ultimate guide to build your own blog</title>
-    <link>https://pandax.me/build-hugo-blog/</link>
-    <pubDate>Tue, 22 Jun 2021 13:46:52 -0500</pubDate>
+    <title>Enable Spotlight search on Mac</title>
+    <link>https://pandax.me/enable-spotlight/</link>
+    <pubDate>Sat, 26 Mar 2022 11:45:57 -0500</pubDate>
     <author>Author</author>
-    <guid>https://pandax.me/build-hugo-blog/</guid>
-    <description><![CDATA[Before you start All hugo commands should be run in the root level
- Build Hugo Blog Locally Step 1: Install hugo &amp;&amp; git For Mac user:
-1 2  brew install hugo brew install git   Step 2: Create a new site 1 2  hugo new site myblog cd myblog   Step 3: Add a theme You can find Hugo themes Here
-In this case I use LoveIt theme as my example]]></description>
+    <guid>https://pandax.me/enable-spotlight/</guid>
+    <description><![CDATA[Method 1 Navigate to
+ System Preferences Spotlights Privacy Add your local disk to the list Remove your local disk from the list The above steps will reindex spotlight on the selected disk  Method 2 In terminal run:
+1 2  sudo mdutil -E / sudo mdutil -a -i on   Above commands fixed everything for me]]></description>
+</item><item>
+    <title>Add Google Analytics to Hugo Blog</title>
+    <link>https://pandax.me/add-google-analytics/</link>
+    <pubDate>Sat, 05 Mar 2022 22:35:38 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/add-google-analytics/</guid>
+    <description><![CDATA[Google Analytics  Register a google analytics account
+  Get your measurement ID that looks like below
+ G-6ED0IWOAJK    Get gtag js script
+  1 2 3 4 5 6 7 8  &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt;    Hugo blog  Find config.]]></description>
+</item><item>
+    <title>What is API</title>
+    <link>https://pandax.me/what-is-api/</link>
+    <pubDate>Tue, 01 Mar 2022 18:05:22 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-api/</guid>
+    <description><![CDATA[What is API Application Programming Interface: allows two applications to talk to each other
+What is REST API REST (Representational State Transfer): A set of functions for developers to perform requests and receive responses using HTTP protocol
+Challenges under API testing  API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens)  Core components of HTTP request  HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content)  What is Payload  Payload/body is secured input data sent to API In JSON  What is JSON  JavaScript Object Notation Data format represented as String-text  Authentication Techniques used in API&rsquo;s  Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth  Why API testing is suitable for automation testing API testing is:]]></description>
+</item><item>
+    <title>Rest API with Express.JS</title>
+    <link>https://pandax.me/express-restapi/</link>
+    <pubDate>Sun, 20 Feb 2022 13:37:22 -0600</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/express-restapi/</guid>
+    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken');  Inlucde route/file: 1 2 3 4  // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB();   File return 1 2  module.exports = connectDB; module.exports = router;   Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13  const connectDB = async () =&gt; { try{ await mongoose.]]></description>
+</item><item>
+    <title>HTTP</title>
+    <link>https://pandax.me/http/</link>
+    <pubDate>Mon, 07 Feb 2022 15:41:20 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/http/</guid>
+    <description><![CDATA[HTTP methods GET: Retrieve data from a server only
+ HTTP GET won&rsquo;t have payload or request body, just send URL only, it simply retrieves data  POST: Add data (create a new object) on the server
+PUT: Update an existing object or resource in a server
+DELETE: Delete data from a server
+Remove is NOT an HTTP verb
+HTTP status code cheatsheet  1xx status codes: Informational requests 2xx status codes: Successful requests 3xx status codes: Redirects 4xx status codes: Client errors 5xx status codes: Server errors  1 2 3 4 5 6 7 8 9 10  CodeStatusDescription200OKTherequestissuccessful201CreatedAnewresourcewassuccessfulycreated400BadrequestTherequestisinvalid(Myproblem)401UnauthorizedRequiresauthentication403ForbiddenTheclientisauthenticatedbutdoesn&#39;thavepermissiontoaccesstherequestedresource404NotFoundTherequestedresourcewasnotfound(API&#39;sproblem)405MethodnotallowedHTTPrequestmethodisnotsupported(useGETtoupdate)500InternalServererror503Serverunavailable  Ref: https://stackoverflow.]]></description>
+</item><item>
+    <title>What is SOA</title>
+    <link>https://pandax.me/what-is-soa/</link>
+    <pubDate>Sat, 05 Feb 2022 12:48:49 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-soa/</guid>
+    <description><![CDATA[What is SOA Service Oriented Architecture:
+Distributed system architecture where all components are designed to be services
+eg. Cloud solutions are based on SOA
+Key attributes  Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity  SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
+ Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure  ESB: Enterprise bus (backbone of a SOA system)]]></description>
+</item><item>
+    <title>All you need to know about React</title>
+    <link>https://pandax.me/react/</link>
+    <pubDate>Wed, 02 Feb 2022 12:16:45 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/react/</guid>
+    <description><![CDATA[What is React  A JavaScript library Use component-based approach  All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI   2011 developed by Facebok developer  Advantages:
+ Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency  Disadvantages:
+ Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency  Angular vs React Important feature of React  React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages  What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
+</item><item>
+    <title>What is OOP</title>
+    <link>https://pandax.me/oop/</link>
+    <pubDate>Tue, 01 Feb 2022 21:08:59 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/oop/</guid>
+    <description><![CDATA[Class Blue print of the objects
+Object An object is an instance of a class (Class -&gt; blueprint, Object -&gt; house)
+Constructor Initialize the state of an object
+Destructor Automatically called at the end of lifetime of an object Free up the acuired resources
+Is-A Relationship Inheritance (Parent-Child)
+class Apple extends Fruit { }  Foo is-a Bar:
+public class Foo extends Bar{}  Has-A Relationship Composition: Creating instances which have references to other objects (Objects depend on each other)]]></description>
+</item><item>
+    <title>How Data Are Stored</title>
+    <link>https://pandax.me/how-data-are-stored/</link>
+    <pubDate>Sun, 30 Jan 2022 21:57:04 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/how-data-are-stored/</guid>
+    <description><![CDATA[How data are ACTUALLY sotred? In a nutshell: All data are stored as 1&rsquo;s and 0&rsquo;s, 1 and 0 are represented by high/low voltage of transistors.
+ Brief Introduction Data are stored in bits, neither binary nor hex. They are both representations of data.
+Computer only identifies voltage levels. There will be some voltage for 1 (high) and some lower voltage for 0 (low). When ever high voltage is passed its 1 and other one is 0.]]></description>
+</item><item>
+    <title>Modem vs Router vs Access Point vs Switch</title>
+    <link>https://pandax.me/network-connection/</link>
+    <pubDate>Tue, 25 Jan 2022 21:48:40 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/network-connection/</guid>
+    <description><![CDATA[So..What&rsquo;s the Difference? A modem is your gateway to the internet—a cable, fiber optic, or telephone line comes through your neighborhood, to your house, and connects to your modem. The modem translates the digital 1s and 0s from your computer into analog information for the cable or telephone wire to carry out to the world, and translates incoming analog signals in the same way. This is called modulation and demodulation, respectively, and it’s where the “mo-dem” gets its name.]]></description>
 </item></channel>
 </rss>

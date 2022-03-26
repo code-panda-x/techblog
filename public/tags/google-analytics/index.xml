@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Google Analytics - Tag - PandaX</title>
+        <link>https://pandax.me/tags/google-analytics/</link>
+        <description>Google Analytics - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 05 Mar 2022 22:35:38 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/google-analytics/" rel="self" type="application/rss+xml" /><item>
+    <title>Add Google Analytics to Hugo Blog</title>
+    <link>https://pandax.me/add-google-analytics/</link>
+    <pubDate>Sat, 05 Mar 2022 22:35:38 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/add-google-analytics/</guid>
+    <description><![CDATA[Google Analytics  Register a google analytics account
+  Get your measurement ID that looks like below
+ G-6ED0IWOAJK    Get gtag js script
+  1 2 3 4 5 6 7 8  &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt;    Hugo blog  Find config.]]></description>
+</item></channel>
+</rss>

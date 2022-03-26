@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>React - Tag - PandaX</title>
+        <link>https://pandax.me/tags/react/</link>
+        <description>React - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 02 Feb 2022 12:16:45 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/react/" rel="self" type="application/rss+xml" /><item>
+    <title>All you need to know about React</title>
+    <link>https://pandax.me/react/</link>
+    <pubDate>Wed, 02 Feb 2022 12:16:45 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/react/</guid>
+    <description><![CDATA[What is React  A JavaScript library Use component-based approach  All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI   2011 developed by Facebok developer  Advantages:
+ Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency  Disadvantages:
+ Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency  Angular vs React Important feature of React  React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages  What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
+</item></channel>
+</rss>

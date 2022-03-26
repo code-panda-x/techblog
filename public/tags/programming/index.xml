@@ -1,0 +1,48 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Programming - Tag - PandaX</title>
+        <link>https://pandax.me/tags/programming/</link>
+        <description>Programming - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 11 Dec 2021 21:29:23 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/programming/" rel="self" type="application/rss+xml" /><item>
+    <title>How to run a program from scratch</title>
+    <link>https://pandax.me/how-to-run-program/</link>
+    <pubDate>Sat, 11 Dec 2021 21:29:23 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/how-to-run-program/</guid>
+    <description><![CDATA[This might be a stupid question for a programmer who has years of programming experience. But when I first started programming, I have no clue how to run a program. I simply followed my professor&rsquo;s instruction: downloaded codeblocks/visual studio, typed in some code, and I could run my program magically! Back in the days, I did&rsquo;t understand what an IDE means, how program compiles inside the IDE, why the code is layed out in certain ways, etc.]]></description>
+</item><item>
+    <title>C# CheatSheet</title>
+    <link>https://pandax.me/c-sharp-cheatsheet/</link>
+    <pubDate>Wed, 25 Aug 2021 13:39:38 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/c-sharp-cheatsheet/</guid>
+    <description><![CDATA[Difference between C# and .Net C# is a programming language
+.Net is a framework that can run C# application
+ It is a collections of library It has a CLR  .Net framwork4.X vs .Net Core3.X vs .Net 5.0 1 2 3 4 5 6 7  .Net framework .Net Core Platform Windows Cross-platform Performance Slow Better CLI IDE based Full CLI command supported (Run CMD) Packaging One big framework Delivered via modularly using Nuget .]]></description>
+</item><item>
+    <title>Python CheatSheet</title>
+    <link>https://pandax.me/python-cheatsheet/</link>
+    <pubDate>Thu, 22 Jul 2021 16:33:33 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/python-cheatsheet/</guid>
+    <description><![CDATA[Where the program starts 1 2  if __name__ == &#39;__main__&#39;: # statements   Array types: List:
+1 2  letters = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;] len(letters) # Returns length of array   Tuple: is immutable!
+1  dimensions = (200, 50)   Dict:
+1  student1 = {&#39;gender&#39;: &#39;male&#39;, &#39;age&#39;: 18}   Set:
+1 2  new_set = {value1, value2, value2, ...} new_set2 = set(value)   Range function 1 2 3 4 5 6 7 8 9 10 11  # range(start, stop) for i in range(1, 10): print(i) # range(stop) start from 0 for i in range(10): print(i) # range(start, stop, step) for i in range(0, 13, 5): print(i)   If else 1 2 3 4 5 6 7 8  if condition_1: statement_block_1 # Execute if condition_1 is True elif condition_2: statement_block_2 # Execute if condition_1 is False &amp; condition_2 is True elif condition_3: statement_block 3 # Execute if condition_3 is True and 1 &amp; 2 are False else: statement_block_3 # Execute if previous conditions are all Falser   Loop 1 2 3 4 5 6 7 8 9  # While loop num = 0 while num &lt; 10: print(num) # For loop list = [1, 2, 3, 4, 5, 6] for i in list: print(i)   Functions 1 2  def function_name(parameters): expressions   Catch Exceptions 1 2 3 4 5 6  try: print(x) except: print(&#34;Something went wrong&#34;) finally: # finally will always be executed print(&#34;The &#39;try except&#39; is finished&#34;)    To be reviewd Class Encapsulation/Inheritance/Polymorphism]]></description>
+</item><item>
+    <title>Ruby CheatSheet</title>
+    <link>https://pandax.me/ruby-cheatsheet/</link>
+    <pubDate>Thu, 15 Jul 2021 10:54:04 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/ruby-cheatsheet/</guid>
+    <description><![CDATA[Everything in ruby is an object Write/Read file write_handler = File.new(&quot;newfile.out&quot;, &quot;w&quot;) write_handle.puts(&quot;sometext&quot;).to_s write_handle.close data_from_file = File.read(&quot;newfile.out&quot;) puts &quot;Data from file: &quot; + data_from_file  Comments =begin my comments =end # Comments  if-else condition 1 2 3 4 5 6 7  if (xxx) puts... elsif (xxx) puts... else puts... end   Comparision puts &quot;5 &lt;=&gt; 10 = &quot; + (5 &lt;=&gt; 10).to_s  Loop loop do x += 1 next unless (x%2) == 0 puts x break if x &gt;= 10 end while y &lt;= 10 # until y &lt;= 10 xxx end for num in nums puts &quot;# {num} , &quot; # print - no new line end  Array arr = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;] arr = Array.]]></description>
+</item><item>
+    <title>Java CheatSheet</title>
+    <link>https://pandax.me/java-cheatsheet/</link>
+    <pubDate>Thu, 24 Jun 2021 16:33:52 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/java-cheatsheet/</guid>
+    <description><![CDATA[Some Java to know Matrix int m = nums.length; int n = nums[0].length; // Reshape matrix for (int x = 0; x &lt; m * n; ++x) { ans[x / c][x % c] = nums[x / n][x % n]; }  Collections Collections.swap(vector, 0, 4); Collections.reverse(row); // row is ArrayList&lt;&gt;()  Stack Stack&lt;Integer&gt; s1 = new Stack&lt;Integer&gt;(); Stack&lt;ListNode&gt; stack = new Stack&lt;ListNode&gt;(); stack.pop().val; stack.push(temp); stack.isEmpty(); stack.peek(); stack.size();  Queue Queue&lt;Integer&gt; Q = new LinkedList&lt;Integer&gt;(); Q.]]></description>
+</item></channel>
+</rss>

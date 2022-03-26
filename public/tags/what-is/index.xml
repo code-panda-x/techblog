@@ -1,0 +1,81 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>What is - Tag - PandaX</title>
+        <link>https://pandax.me/tags/what-is/</link>
+        <description>What is - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Mar 2022 18:05:22 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/what-is/" rel="self" type="application/rss+xml" /><item>
+    <title>What is API</title>
+    <link>https://pandax.me/what-is-api/</link>
+    <pubDate>Tue, 01 Mar 2022 18:05:22 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-api/</guid>
+    <description><![CDATA[What is API Application Programming Interface: allows two applications to talk to each other
+What is REST API REST (Representational State Transfer): A set of functions for developers to perform requests and receive responses using HTTP protocol
+Challenges under API testing  API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens)  Core components of HTTP request  HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content)  What is Payload  Payload/body is secured input data sent to API In JSON  What is JSON  JavaScript Object Notation Data format represented as String-text  Authentication Techniques used in API&rsquo;s  Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth  Why API testing is suitable for automation testing API testing is:]]></description>
+</item><item>
+    <title>What is SOA</title>
+    <link>https://pandax.me/what-is-soa/</link>
+    <pubDate>Sat, 05 Feb 2022 12:48:49 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-soa/</guid>
+    <description><![CDATA[What is SOA Service Oriented Architecture:
+Distributed system architecture where all components are designed to be services
+eg. Cloud solutions are based on SOA
+Key attributes  Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity  SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
+ Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure  ESB: Enterprise bus (backbone of a SOA system)]]></description>
+</item><item>
+    <title>What is OOP</title>
+    <link>https://pandax.me/oop/</link>
+    <pubDate>Tue, 01 Feb 2022 21:08:59 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/oop/</guid>
+    <description><![CDATA[Class Blue print of the objects
+Object An object is an instance of a class (Class -&gt; blueprint, Object -&gt; house)
+Constructor Initialize the state of an object
+Destructor Automatically called at the end of lifetime of an object Free up the acuired resources
+Is-A Relationship Inheritance (Parent-Child)
+class Apple extends Fruit { }  Foo is-a Bar:
+public class Foo extends Bar{}  Has-A Relationship Composition: Creating instances which have references to other objects (Objects depend on each other)]]></description>
+</item><item>
+    <title>What is File</title>
+    <link>https://pandax.me/what-is-file/</link>
+    <pubDate>Tue, 11 Jan 2022 21:45:42 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-file/</guid>
+    <description><![CDATA[Executable files (.exe)  An executable file is a type of computer file that runs a program when it is opened. This means it executes code or a series of instructions contained in the file. The two primary types of executable files are 1) compiled programs and 2) scripts. Executable files are not necessarily binary, for example a Python script in text form can be made executable on Unix systems by writing a shebang line #!]]></description>
+</item><item>
+    <title>What is Code</title>
+    <link>https://pandax.me/what-is-code/</link>
+    <pubDate>Mon, 20 Dec 2021 21:40:15 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-code/</guid>
+    <description><![CDATA[About code Sometimes I got confused by some concepts, such as machine code and object code. Here&rsquo;s a collection of &ldquo;code&rdquo; definitions
+ Source code: (.c file) Any collection of code, with or without comments, written using a human-readable programming language, usually as plain text.
+ Assembly code (.s file) is plain-text and (somewhat) human read-able source code that mostly has a direct 1:1 analog with machine instructions. This is accomplished using mnemonics for the actual instructions, registers, or other resources.]]></description>
+</item><item>
+    <title>What is Linker &amp; Loader</title>
+    <link>https://pandax.me/what-is-linker-loader/</link>
+    <pubDate>Fri, 12 Nov 2021 21:22:38 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-linker-loader/</guid>
+    <description><![CDATA[Linker &amp; Loader  Linker: A linker is special program that combines the object files, generated by compiler/assembler, and other pieces of codes to originate an executable file have. exe extension. In the object file, linker searches and append all libraries needed for execution of file. It regulates memory space that code from each module will hold. It also merges two or more separate object programs and establishes link among them.]]></description>
+</item><item>
+    <title>What is Compiler</title>
+    <link>https://pandax.me/what-is-compiler/</link>
+    <pubDate>Sun, 10 Oct 2021 20:51:13 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-compiler/</guid>
+    <description><![CDATA[Dr. Hamer Here&rsquo;s a cartoon of the professor who taught me compiler: Dr. Hamer
+He&rsquo;s a character and a great professor with humor and fantastic teaching skills. He has influnced me a lot
+Compiler: In computing, a compiler is a computer program that translates computer code written in one programming language (the source language) into another language (the target language)
+ Origin: The firist compiler was coded in the late 1950&rsquo;s for Fortran]]></description>
+</item><item>
+    <title>What is Assembler</title>
+    <link>https://pandax.me/what-is-assembler/</link>
+    <pubDate>Sat, 11 Sep 2021 21:11:12 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/what-is-assembler/</guid>
+    <description><![CDATA[Assembler An assembler translates assembly language into machine code
+Assembling Process  A SIC/XE source program looks like this A Intermediate file looks like this An object file looks like this   Pass-1:  Define symbols and literals and remember them in symbol table and literal table respectively. Keep track of location counter Process pseudo-operations   Pass-2:  Generate object code by converting symbolic op-code into respective numeric op-code Generate data for literals and look for values of symbols     ]]></description>
+</item></channel>
+</rss>
