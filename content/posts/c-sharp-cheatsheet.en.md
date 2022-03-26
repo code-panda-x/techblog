@@ -2,7 +2,7 @@
 title: "C# CheatSheet"
 date: 2021-08-25T13:39:38-05:00
 draft: false
-tags: ["C#","Programming", "ASP.NET"]
+tags: ["C Sharp","Programming", "ASP.NET"]
 categories: ["Programming Language"]
 slug: "c-sharp-cheatsheet"
 subtitle: "Questions regarding C# & ASP.NET"
