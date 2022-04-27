@@ -38,6 +38,7 @@ DELETE: **Delete** data from a server
 Code    Status              Description
 200     OK                  The request is successful
 201     Created             A new resource was successfuly created
+301     Mising parameter
 400     Bad request         The request is invalid (My problem)
 401     Unauthorized        Requires authentication
 403     Forbidden           The client is authenticated but doesn't have permission to access the requested resource
