@@ -9,6 +9,6 @@
     <pubDate>Thu, 24 Jun 2021 16:33:52 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/java-cheatsheet/</guid>
-    <description><![CDATA[Some Java to know Matrix int m = nums.length; int n = nums[0].length; // Reshape matrix for (int x = 0; x &lt; m * n; ++x) { ans[x / c][x % c] = nums[x / n][x % n]; }  Collections Collections.swap(vector, 0, 4); Collections.reverse(row); // row is ArrayList&lt;&gt;()  Stack Stack&lt;Integer&gt; s1 = new Stack&lt;Integer&gt;(); Stack&lt;ListNode&gt; stack = new Stack&lt;ListNode&gt;(); stack.pop().val; stack.push(temp); stack.isEmpty(); stack.peek(); stack.size();  Queue Queue&lt;Integer&gt; Q = new LinkedList&lt;Integer&gt;(); Q.]]></description>
+    <description><![CDATA[Some Java to know Matrix int m = nums.length; int n = nums[0].length; // Reshape matrix for (int x = 0; x &lt; m * n; ++x) { ans[x / c][x % c] = nums[x / n][x % n]; } Collections Collections.swap(vector, 0, 4); Collections.reverse(row); // row is ArrayList&lt;&gt;() Stack Stack&lt;Integer&gt; s1 = new Stack&lt;Integer&gt;(); Stack&lt;ListNode&gt; stack = new Stack&lt;ListNode&gt;(); stack.pop().val; stack.push(temp); stack.isEmpty(); stack.peek(); stack.size(); Queue Queue&lt;Integer&gt; Q = new LinkedList&lt;Integer&gt;(); Q.]]></description>
 </item></channel>
 </rss>

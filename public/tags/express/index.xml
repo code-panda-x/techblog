@@ -9,6 +9,6 @@
     <pubDate>Sun, 20 Feb 2022 13:37:22 -0600</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/express-restapi/</guid>
-    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken');  Inlucde route/file: 1 2 3 4  // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB();   File return 1 2  module.exports = connectDB; module.exports = router;   Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13  const connectDB = async () =&gt; { try{ await mongoose.]]></description>
+    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken'); Inlucde route/file: 1 2 3 4 // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB(); File return 1 2 module.exports = connectDB; module.exports = router; Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13 const connectDB = async () =&gt; { try{ await mongoose.]]></description>
 </item></channel>
 </rss>

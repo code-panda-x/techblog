@@ -14,7 +14,7 @@ Object An object is an instance of a class (Class -&gt; blueprint, Object -&gt; 
 Constructor Initialize the state of an object
 Destructor Automatically called at the end of lifetime of an object Free up the acuired resources
 Is-A Relationship Inheritance (Parent-Child)
-class Apple extends Fruit { }  Foo is-a Bar:
-public class Foo extends Bar{}  Has-A Relationship Composition: Creating instances which have references to other objects (Objects depend on each other)]]></description>
+class Apple extends Fruit { } Foo is-a Bar:
+public class Foo extends Bar{} Has-A Relationship Composition: Creating instances which have references to other objects (Objects depend on each other)]]></description>
 </item></channel>
 </rss>

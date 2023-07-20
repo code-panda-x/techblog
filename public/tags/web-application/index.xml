@@ -11,14 +11,14 @@
     <guid>https://pandax.me/what-is-api/</guid>
     <description><![CDATA[What is API Application Programming Interface: allows two applications to talk to each other
 What is REST API REST (Representational State Transfer): A set of functions for developers to perform requests and receive responses using HTTP protocol
-Challenges under API testing  API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens)  Core components of HTTP request  HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content)  What is Payload  Payload/body is secured input data sent to API In JSON  What is JSON  JavaScript Object Notation Data format represented as String-text  Authentication Techniques used in API&rsquo;s  Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth  Why API testing is suitable for automation testing API testing is:]]></description>
+Challenges under API testing API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens) Core components of HTTP request HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content) What is Payload Payload/body is secured input data sent to API In JSON What is JSON JavaScript Object Notation Data format represented as String-text Authentication Techniques used in API&rsquo;s Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth Why API testing is suitable for automation testing API testing is:]]></description>
 </item><item>
     <title>Rest API with Express.JS</title>
     <link>https://pandax.me/express-restapi/</link>
     <pubDate>Sun, 20 Feb 2022 13:37:22 -0600</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/express-restapi/</guid>
-    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken');  Inlucde route/file: 1 2 3 4  // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB();   File return 1 2  module.exports = connectDB; module.exports = router;   Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13  const connectDB = async () =&gt; { try{ await mongoose.]]></description>
+    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken'); Inlucde route/file: 1 2 3 4 // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB(); File return 1 2 module.exports = connectDB; module.exports = router; Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13 const connectDB = async () =&gt; { try{ await mongoose.]]></description>
 </item><item>
     <title>What is SOA</title>
     <link>https://pandax.me/what-is-soa/</link>
@@ -28,16 +28,16 @@ Challenges under API testing  API Documentation (need endpoint, parameters, reso
     <description><![CDATA[What is SOA Service Oriented Architecture:
 Distributed system architecture where all components are designed to be services
 eg. Cloud solutions are based on SOA
-Key attributes  Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity  SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
- Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure  ESB: Enterprise bus (backbone of a SOA system)]]></description>
+Key attributes Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
+Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure ESB: Enterprise bus (backbone of a SOA system)]]></description>
 </item><item>
     <title>All you need to know about React</title>
     <link>https://pandax.me/react/</link>
     <pubDate>Wed, 02 Feb 2022 12:16:45 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/react/</guid>
-    <description><![CDATA[What is React  A JavaScript library Use component-based approach  All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI   2011 developed by Facebok developer  Advantages:
- Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency  Disadvantages:
- Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency  Angular vs React Important feature of React  React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages  What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
+    <description><![CDATA[What is React A JavaScript library Use component-based approach All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI 2011 developed by Facebok developer Advantages:
+Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency Disadvantages:
+Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency Angular vs React Important feature of React React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
 </item></channel>
 </rss>

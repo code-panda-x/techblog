@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/pandax.me\/python-cheatsheet\/"
-        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Python, Programming","wordcount":  239 ,
+        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Python, Programming","wordcount":  436 ,
         "url": "https:\/\/pandax.me\/python-cheatsheet\/","datePublished": "2021-07-22T16:33:33-05:00","dateModified": "2021-07-22T16:33:33-05:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/pandax.me\/images\/avatar.png"},"author": {
@@ -110,8 +110,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Python CheatSheet</h1><h2 class="single-subtitle">Common used Python code</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/programming-language/"><i class="far fa-folder fa-fw"></i>Programming Language</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-22">2021-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;239 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/python-cheatsheet/" class="leancloud_visitors" data-flag-title="Python CheatSheet">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-22">2021-07-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;436 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;<span id="/python-cheatsheet/" class="leancloud_visitors" data-flag-title="Python CheatSheet">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -122,12 +122,19 @@
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#where-the-program-starts">Where the program starts</a></li>
+    <li><a href="#self">Self</a></li>
     <li><a href="#array-types">Array types:</a></li>
     <li><a href="#range-function">Range function</a></li>
     <li><a href="#if-else">If else</a></li>
+    <li><a href="#heap">Heap</a></li>
     <li><a href="#loop">Loop</a></li>
     <li><a href="#functions">Functions</a></li>
     <li><a href="#catch-exceptions">Catch Exceptions</a></li>
+    <li><a href="#math">Math</a></li>
+    <li><a href="#init">Init</a></li>
+    <li><a href="#slice-notation">Slice notation</a></li>
+    <li><a href="#httpsstackoverflowcomquestions509211understanding-slicing"><a href="https://stackoverflow.com/questions/509211/understanding-slicing">https://stackoverflow.com/questions/509211/understanding-slicing</a></a></li>
+    <li><a href="#sort-lambda">Sort Lambda</a></li>
   </ul>
 
   <ul>
@@ -146,16 +153,36 @@
 </span></span><span class="line"><span class="cl">    # statements
 </span></span></code></pre></td></tr></table>
 </div>
+</div><h2 id="self">Self</h2>
+<p>Use self to pass values between def&rsquo;s</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">self.arr = nums
+</span></span></code></pre></td></tr></table>
+</div>
 </div><h2 id="array-types">Array types:</h2>
 <p>List:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">letters = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;]
 </span></span><span class="line"><span class="cl">len(letters) # Returns length of array
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">## Common use
+</span></span><span class="line"><span class="cl">list = []
+</span></span><span class="line"><span class="cl">list.append((a,b))
+</span></span><span class="line"><span class="cl">list.sort() # nlogn
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Tuple: is <strong>immutable!</strong></p>
@@ -167,13 +194,39 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">dimensions = (200, 50) 
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>Dict:</p>
+</div><p>Dict: Basically HashMap</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">student1 = {&#39;gender&#39;: &#39;male&#39;, &#39;age&#39;: 18}
+</span></span><span class="line"><span class="cl">d = {} # d = dict()
+</span></span><span class="line"><span class="cl">d[0] = 1 # or d = {0:1}
+</span></span><span class="line"><span class="cl">d = defaultdict(int) # init with 0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Update dict
+</span></span><span class="line"><span class="cl">if s in d:
+</span></span><span class="line"><span class="cl">    d[s] += 1 
+</span></span><span class="line"><span class="cl">else:
+</span></span><span class="line"><span class="cl">    d[s] = 1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">## Java-like version
+</span></span><span class="line"><span class="cl">count += d.get(s-k,0)
+</span></span><span class="line"><span class="cl">d[s] = d.get(s,0) + 1
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>Set:</p>
@@ -201,6 +254,9 @@
 </span><span class="lnt"> 9
 </span><span class="lnt">10
 </span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># range(start, stop)
@@ -214,6 +270,9 @@
 </span></span><span class="line"><span class="cl"># range(start, stop, step)
 </span></span><span class="line"><span class="cl">for i in range(0, 13, 5):
 </span></span><span class="line"><span class="cl">    print(i)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># travse backwards: https://www.tutorialspoint.com/backward-iteration-in-python
+</span></span><span class="line"><span class="cl">for i in range(len(nums)-1, -1, -1):
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="if-else">If else</h2>
@@ -239,18 +298,30 @@
 </span></span><span class="line"><span class="cl">    statement_block_3 # Execute if previous conditions are all Falser 
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="loop">Loop</h2>
+</div><h2 id="heap">Heap</h2>
+<p>Min heap
+h =[]
+heapq.heappush(h,i[1])
+heapq.heapreplace(h,i[1])</p>
+<h2 id="loop">Loop</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># While loop
@@ -262,6 +333,13 @@
 </span></span><span class="line"><span class="cl">list = [1, 2, 3, 4, 5, 6]
 </span></span><span class="line"><span class="cl">for i in list:
 </span></span><span class="line"><span class="cl">    print(i)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for a, b, c in list:
+</span></span><span class="line"><span class="cl">    ## [[a,b,c],[1,2,3]]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for index, num in enumerate(nums)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for i in range(len(nums)):
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="functions">Functions</h2>
@@ -294,8 +372,52 @@
 </span></span><span class="line"><span class="cl">    print(&#34;The &#39;try except&#39; is finished&#34;)
 </span></span></code></pre></td></tr></table>
 </div>
-</div><hr>
-<h1 id="to-be-reviewd">To be reviewd</h1>
+</div><h2 id="math">Math</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">max(num1, num2)
+</span></span><span class="line"><span class="cl">sum(nums)
+</span></span><span class="line"><span class="cl">i**2 # i^2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="init">Init</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sum, num = 0,0
+</span></span><span class="line"><span class="cl">newlist = [0]
+</span></span><span class="line"><span class="cl">newlist = nums + [0]
+</span></span><span class="line"><span class="cl">newlist = [1] + [0] * k # [0:1, 0:0, 0:0]
+</span></span><span class="line"><span class="cl">newlist = list(rage(8))  # [0,1,..7]
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="slice-notation">Slice notation</h2>
+<h2 id="httpsstackoverflowcomquestions509211understanding-slicing"><a href="https://stackoverflow.com/questions/509211/understanding-slicing" target="_blank" rel="noopener noreffer">https://stackoverflow.com/questions/509211/understanding-slicing</a></h2>
+<h2 id="sort-lambda">Sort Lambda</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">intervals = sorted(intervals, key = lambda x : x[0])
+</span></span><span class="line"><span class="cl">list.sort() # nlogn
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="to-be-reviewd">To be reviewd</h1>
 <h2 id="class">Class</h2>
 <p><a href="https://turingplanet.org/2019/09/21/%e7%b1%bb-class/" target="_blank" rel="noopener noreffer">Encapsulation/Inheritance/Polymorphism</a></p>
 <h2 id="unit-testing">Unit Testing</h2>
@@ -332,8 +454,8 @@
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.95.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

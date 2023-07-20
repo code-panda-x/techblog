@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.95.0" />
+	<meta name="generator" content="Hugo 0.101.0" />
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
@@ -106,22 +106,31 @@
         alt="/images/profile.png"
         title="/images/profile.png" /></a></div><h2 class="home-subtitle"><div id="id-1" class="typeit"></div></h2><div class="links"><a href="https://github.com/code-panda-x" title="GitHub" target="_blank" rel="noopener noreffer me"><i class="fab fa-github-alt fa-fw"></i></a><a href="https://linkedin.com/in/kehan-meng" title="LinkedIn" target="_blank" rel="noopener noreffer me"><i class="fab fa-linkedin fa-fw"></i></a><a href="mailto:alexkehanmeng@gmail.com" title="Email" rel=" me"><i class="far fa-envelope fa-fw"></i></a><a href="/index.xml" title="RSS" target="_blank" rel="noopener noreffer me"><i class="fas fa-rss fa-fw"></i></a></div></div>
 <article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
+        <a href="/how-are-blogs-built/">How are blogs built</a>
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2023-07-19">2023-07-19</time></span>&nbsp;<span class="post-category">included in <a href="/categories/general-tech/"><i class="far fa-folder fa-fw"></i>General Tech</a></span></div><div class="content">How are most of the websites/blogs built? Really? Typically, there are two layers of website building:
+Pull content from local file system (md files) or third party CMS Render the website The first layer - Content pulling Conventional blog engines hosted on GitHub (Hexo, Hugo, Jekyll) host their &ldquo;content&rdquo; in files stored and managed by Git.
+Gatsby and Gridsome, besides supporting file-based content sourcing, also have plugins that enables them to pull &ldquo;content&rdquo; from a third-party CMS, whether it&rsquo;s a self-hosted WordPress or Ghost, or a standalone cloud-based solution like Strapi, DatoCMS, or Contentful.</div><div class="post-footer">
+        <a href="/how-are-blogs-built/">Read More</a><div class="post-tags">
+                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/blog/">Blog</a>,&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/git/">Git</a></div></div>
+</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/docker/">Docker &amp; Kubernetes</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-22">2022-04-22</time></span></div><div class="content">Docker About Docker Problem: It works on my machine, but not works on others'
 Solution:
- VM Docker  Docker is a technology for creating and running containers
+VM Docker Docker is a technology for creating and running containers, so we don&rsquo;t need redudent VMs!
 Docker allows different machines to share the same environments by using sharing docker image and create same containers
-A Container is a collection of one or more processes, organized under a single name and identifier. A container is isolated from the other processes running within a computing environment, be it a physical computer or a virtual machine (VM).</div><div class="post-footer">
+Docker images DockerFile + App files &ndash;&gt; Docker &ndash;&gt; Image (shared to others)
+Docker image explains what your environment looks like Docker image contains everything a container needs to run:</div><div class="post-footer">
         <a href="/docker/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/microservices/">Microservices vs Monolith</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-22">2022-04-22</time></span></div><div class="content">MicroService  Take every app function and put it in its own service Runs in its own container Communicate via APIs  Pros  Flexibility (each microservice can be built in different languages/technologies) Less risk in change Independent scaling Faster release cycles  Monolith  Server-side systme based on single application  Pros  Good for small team Less complex Less duplication Run fast  Cons  Highly dependent (single point of failure) Language/Framework Growth Scaling issue Complex deployment  Architecture 1  Limits Microservice Microservice X Microservice Y    Questions: What is spring boot/cloud?</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-22">2022-04-22</time></span></div><div class="content">MicroService Take every app function and put it in its own service Runs in its own container Communicate via APIs But if each microservice is implemented in different languages/environment, how do we deploy? Deployment: Use Docker ! Put each microservice into containers
+Pros Flexibility (each microservice can be built in different languages/technologies) Less risk in change Independent scaling Faster release cycles Monolith Server-side systme based on single application Pros Good for small team Less complex Less duplication Run fast Cons Highly dependent (single point of failure) Language/Framework Growth Scaling issue Complex deployment Spring Boot Goal Enable quickly built applications Provide common non-functional features Not Spring boot does NOT generate code Spring boot is NOT an application server or a web server Features Quick starter projects with auto configuration</div><div class="post-footer">
         <a href="/microservices/">Read More</a></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/web-service/">Web Service</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-04-18">2022-04-18</time></span></div><div class="content">What is web service Software system designed to support interoperable machine-to-machine interaction over a network.
 Three keys:
- machine to machine (todo service is not) Interoperable (not platform dependent) Over a network  Different kinds of web services SOAP Use XML as exchange format
+machine to machine (todo service is not) Interoperable (not platform dependent) Over a network Different kinds of web services SOAP Use XML as exchange format
 Adhere to Structure: Envelope - Header - Body
 REST The format of request/response is HTTP
 resources A resource has an URI, it is what you want to present in your application</div><div class="post-footer">
@@ -129,25 +138,18 @@ resources A resource has an URI, it is what you want to present in your applicat
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/enable-spotlight/">Enable Spotlight search on Mac</a>
     </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-26">2022-03-26</time></span>&nbsp;<span class="post-category">included in <a href="/categories/general-tech/"><i class="far fa-folder fa-fw"></i>General Tech</a></span></div><div class="content">Method 1 Navigate to
- System Preferences Spotlights Privacy Add your local disk to the list Remove your local disk from the list The above steps will reindex spotlight on the selected disk  Method 2 In terminal run:
-1 2  sudo mdutil -E / sudo mdutil -a -i on   Above commands fixed everything for me</div><div class="post-footer">
+System Preferences Spotlights Privacy Add your local disk to the list Remove your local disk from the list The above steps will reindex spotlight on the selected disk Method 2 In terminal run:
+1 2 sudo mdutil -E / sudo mdutil -a -i on Above commands fixed everything for me</div><div class="post-footer">
         <a href="/enable-spotlight/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/mac/">Mac</a>,&nbsp;<a href="/tags/spotlight/">Spotlight</a></div></div>
 </article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
         <a href="/add-google-analytics/">Add Google Analytics to Hugo Blog</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-05">2022-03-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/general-tech/"><i class="far fa-folder fa-fw"></i>General Tech</a></span></div><div class="content">Google Analytics  Register a google analytics account
-  Get your measurement ID that looks like below
- G-6ED0IWOAJK    Get gtag js script
-  1 2 3 4 5 6 7 8  &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt;    Hugo blog  Find config.</div><div class="post-footer">
+    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-05">2022-03-05</time></span>&nbsp;<span class="post-category">included in <a href="/categories/general-tech/"><i class="far fa-folder fa-fw"></i>General Tech</a></span></div><div class="content">Google Analytics Register a google analytics account
+Get your measurement ID that looks like below
+G-6ED0IWOAJK Get gtag js script
+1 2 3 4 5 6 7 8 &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt; Hugo blog Find config.toml file, enable google analytics as below 1 2 3 enableGoogleAnalytics = true trackingCodeType = &#34;gtag&#34; trackingID = &#34;G-6ED0IWOAJK&#34; This is my settings above, you may just need</div><div class="post-footer">
         <a href="/add-google-analytics/">Read More</a><div class="post-tags">
                 <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/blog/">Blog</a>,&nbsp;<a href="/tags/hugo/">Hugo</a>,&nbsp;<a href="/tags/google-analytics/">Google Analytics</a>,&nbsp;<a href="/tags/javascript/">JavaScript</a></div></div>
-</article><article class="single summary" itemscope itemtype="http://schema.org/Article"><h1 class="single-title" itemprop="name headline">
-        <a href="/what-is-api/">What is API</a>
-    </h1><div class="post-meta"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-publish">published on <time datetime="2022-03-01">2022-03-01</time></span>&nbsp;<span class="post-category">included in <a href="/categories/general-tech/"><i class="far fa-folder fa-fw"></i>General Tech</a></span></div><div class="content">What is API Application Programming Interface: allows two applications to talk to each other
-What is REST API REST (Representational State Transfer): A set of functions for developers to perform requests and receive responses using HTTP protocol
-Challenges under API testing  API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens)  Core components of HTTP request  HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content)  What is Payload  Payload/body is secured input data sent to API In JSON  What is JSON  JavaScript Object Notation Data format represented as String-text  Authentication Techniques used in API&rsquo;s  Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth  Why API testing is suitable for automation testing API testing is:</div><div class="post-footer">
-        <a href="/what-is-api/">Read More</a><div class="post-tags">
-                <i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/web-application/">Web Application</a>,&nbsp;<a href="/tags/api/">API</a>,&nbsp;<a href="/tags/http/">HTTP</a>,&nbsp;<a href="/tags/what-is/">What is</a></div></div>
 </article><ul class="pagination"><li class="page-item active">
                     <span class="page-link">
                         <a href="/">1</a>
@@ -168,8 +170,8 @@ Challenges under API testing  API Documentation (need endpoint, parameters, reso
                     </span>
                 </li></ul></div></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.95.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

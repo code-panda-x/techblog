@@ -3,15 +3,25 @@
         <title>Git - Tag - PandaX</title>
         <link>https://pandax.me/tags/git/</link>
         <description>Git - Tag - PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 22 Jun 2021 13:46:52 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/git/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 19 Jul 2023 20:43:29 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/git/" rel="self" type="application/rss+xml" /><item>
+    <title>How are blogs built</title>
+    <link>https://pandax.me/how-are-blogs-built/</link>
+    <pubDate>Wed, 19 Jul 2023 20:43:29 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/how-are-blogs-built/</guid>
+    <description><![CDATA[How are most of the websites/blogs built? Really? Typically, there are two layers of website building:
+Pull content from local file system (md files) or third party CMS Render the website The first layer - Content pulling Conventional blog engines hosted on GitHub (Hexo, Hugo, Jekyll) host their &ldquo;content&rdquo; in files stored and managed by Git.
+Gatsby and Gridsome, besides supporting file-based content sourcing, also have plugins that enables them to pull &ldquo;content&rdquo; from a third-party CMS, whether it&rsquo;s a self-hosted WordPress or Ghost, or a standalone cloud-based solution like Strapi, DatoCMS, or Contentful.]]></description>
+</item><item>
     <title>Ultimate guide to build your own blog</title>
     <link>https://pandax.me/build-hugo-blog/</link>
     <pubDate>Tue, 22 Jun 2021 13:46:52 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/build-hugo-blog/</guid>
     <description><![CDATA[Before you start All hugo commands should be run in the root level
- Build Hugo Blog Locally Step 1: Install hugo &amp;&amp; git For Mac user:
-1 2  brew install hugo brew install git   Step 2: Create a new site 1 2  hugo new site myblog cd myblog   Step 3: Add a theme You can find Hugo themes Here
-In this case I use LoveIt theme as my example]]></description>
+Build Hugo Blog Locally Step 1: Install hugo &amp;&amp; git For Mac user:
+1 2 brew install hugo brew install git Step 2: Create a new site 1 2 hugo new site myblog cd myblog Step 3: Add a theme You can find Hugo themes Here
+In this case I use LoveIt theme as my example
+1 2 git init git submodule add https://github.]]></description>
 </item></channel>
 </rss>

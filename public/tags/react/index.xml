@@ -9,8 +9,8 @@
     <pubDate>Wed, 02 Feb 2022 12:16:45 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/react/</guid>
-    <description><![CDATA[What is React  A JavaScript library Use component-based approach  All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI   2011 developed by Facebok developer  Advantages:
- Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency  Disadvantages:
- Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency  Angular vs React Important feature of React  React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages  What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
+    <description><![CDATA[What is React A JavaScript library Use component-based approach All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI 2011 developed by Facebok developer Advantages:
+Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency Disadvantages:
+Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency Angular vs React Important feature of React React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
 </item></channel>
 </rss>

@@ -10,7 +10,7 @@
     <author>Author</author>
     <guid>https://pandax.me/enable-spotlight/</guid>
     <description><![CDATA[Method 1 Navigate to
- System Preferences Spotlights Privacy Add your local disk to the list Remove your local disk from the list The above steps will reindex spotlight on the selected disk  Method 2 In terminal run:
-1 2  sudo mdutil -E / sudo mdutil -a -i on   Above commands fixed everything for me]]></description>
+System Preferences Spotlights Privacy Add your local disk to the list Remove your local disk from the list The above steps will reindex spotlight on the selected disk Method 2 In terminal run:
+1 2 sudo mdutil -E / sudo mdutil -a -i on Above commands fixed everything for me]]></description>
 </item></channel>
 </rss>

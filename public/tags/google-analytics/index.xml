@@ -9,9 +9,9 @@
     <pubDate>Sat, 05 Mar 2022 22:35:38 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/add-google-analytics/</guid>
-    <description><![CDATA[Google Analytics  Register a google analytics account
-  Get your measurement ID that looks like below
- G-6ED0IWOAJK    Get gtag js script
-  1 2 3 4 5 6 7 8  &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt;    Hugo blog  Find config.]]></description>
+    <description><![CDATA[Google Analytics Register a google analytics account
+Get your measurement ID that looks like below
+G-6ED0IWOAJK Get gtag js script
+1 2 3 4 5 6 7 8 &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt; Hugo blog Find config.toml file, enable google analytics as below 1 2 3 enableGoogleAnalytics = true trackingCodeType = &#34;gtag&#34; trackingID = &#34;G-6ED0IWOAJK&#34; This is my settings above, you may just need]]></description>
 </item></channel>
 </rss>

@@ -8,9 +8,10 @@
         <title>Docker &amp; Kubernetes - PandaX</title><meta name="Description" content="A Blog about Tech, Life, and Productivity"><meta property="og:title" content="Docker &amp; Kubernetes" />
 <meta property="og:description" content="Docker About Docker Problem: It works on my machine, but not works on others&#39;
 Solution:
- VM Docker  Docker is a technology for creating and running containers
+VM Docker Docker is a technology for creating and running containers, so we don&rsquo;t need redudent VMs!
 Docker allows different machines to share the same environments by using sharing docker image and create same containers
-A Container is a collection of one or more processes, organized under a single name and identifier. A container is isolated from the other processes running within a computing environment, be it a physical computer or a virtual machine (VM)." />
+Docker images DockerFile &#43; App files &ndash;&gt; Docker &ndash;&gt; Image (shared to others)
+Docker image explains what your environment looks like Docker image contains everything a container needs to run:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pandax.me/docker/" /><meta property="og:image" content="https://pandax.me/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-22T17:36:35-05:00" />
@@ -22,13 +23,14 @@ A Container is a collection of one or more processes, organized under a single n
 <meta name="twitter:title" content="Docker &amp; Kubernetes"/>
 <meta name="twitter:description" content="Docker About Docker Problem: It works on my machine, but not works on others&#39;
 Solution:
- VM Docker  Docker is a technology for creating and running containers
+VM Docker Docker is a technology for creating and running containers, so we don&rsquo;t need redudent VMs!
 Docker allows different machines to share the same environments by using sharing docker image and create same containers
-A Container is a collection of one or more processes, organized under a single name and identifier. A container is isolated from the other processes running within a computing environment, be it a physical computer or a virtual machine (VM)."/>
+Docker images DockerFile &#43; App files &ndash;&gt; Docker &ndash;&gt; Image (shared to others)
+Docker image explains what your environment looks like Docker image contains everything a container needs to run:"/>
 <meta name="application-name" content="PandaX">
 <meta name="apple-mobile-web-app-title" content="PandaX"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://pandax.me/docker/" /><link rel="prev" href="https://pandax.me/microservices/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://pandax.me/docker/" /><link rel="prev" href="https://pandax.me/microservices/" /><link rel="next" href="https://pandax.me/how-are-blogs-built/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -37,7 +39,7 @@ A Container is a collection of one or more processes, organized under a single n
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/pandax.me\/docker\/"
-        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  496 ,
+        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  1294 ,
         "url": "https:\/\/pandax.me\/docker\/","datePublished": "2022-04-22T17:36:35-05:00","dateModified": "2022-04-22T17:36:35-05:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/pandax.me\/images\/avatar.png"},"author": {
@@ -118,8 +120,8 @@ A Container is a collection of one or more processes, organized under a single n
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Docker &amp; Kubernetes</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-22">2022-04-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;496 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;<span id="/docker/" class="leancloud_visitors" data-flag-title="Docker &amp; Kubernetes">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-22">2022-04-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1294 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;7 minutes&nbsp;<span id="/docker/" class="leancloud_visitors" data-flag-title="Docker &amp; Kubernetes">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -130,10 +132,16 @@ A Container is a collection of one or more processes, organized under a single n
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
     <li><a href="#about-docker">About Docker</a></li>
-    <li><a href="#docker-images">Docker images</a></li>
+    <li><a href="#docker-images">Docker images</a>
+      <ul>
+        <li><a href="#when-run-docker-images-what-happens">When run docker images, what happens?</a></li>
+      </ul>
+    </li>
     <li><a href="#run-docker-containers-on">Run docker containers on</a></li>
-    <li><a href="#basics">Basics</a></li>
-    <li><a href="#example">Example</a></li>
+    <li><a href="#docker-commands">Docker commands</a></li>
+    <li><a href="#how-do-we-build-an-image">How do we build an image?</a></li>
+    <li><a href="#docker-compose">Docker compose</a></li>
+    <li><a href="#architecture">Architecture</a></li>
   </ul>
 
   <ul>
@@ -141,6 +149,7 @@ A Container is a collection of one or more processes, organized under a single n
     <li><a href="#why-we-want-kubernetes">Why we want Kubernetes</a></li>
     <li><a href="#terminology">Terminology</a></li>
     <li><a href="#workflow">WorkFlow</a></li>
+    <li><a href="#kubernetes-commands">Kubernetes commands</a></li>
     <li><a href="#docker-vs-kubernetes">Docker vs Kubernetes</a></li>
   </ul>
 </nav></div>
@@ -152,9 +161,8 @@ A Container is a collection of one or more processes, organized under a single n
 <li>VM</li>
 <li>Docker</li>
 </ul>
-<p>Docker is a technology for creating and running containers</p>
+<p>Docker is a technology for creating and running containers, so we don&rsquo;t need redudent VMs!</p>
 <p>Docker allows different machines to share the same environments by using sharing docker image and create same containers</p>
-<p>A <strong>Container</strong> is a collection of one or more processes, organized under a single name and identifier. A container is isolated from the other processes running within a computing environment, be it a physical computer or a virtual machine (VM).</p>
 <h2 id="docker-images">Docker images</h2>
 <p>DockerFile + App files &ndash;&gt; Docker &ndash;&gt; Image (shared to others)</p>
 <p>Docker image explains what your environment looks like
@@ -164,24 +172,24 @@ Docker image contains everything a container needs to run:</p>
 <li>Application code</li>
 <li>Dependencies</li>
 </ul>
-<p>Docker compose:
-Controls all containers and makes them work together</p>
+<h3 id="when-run-docker-images-what-happens">When run docker images, what happens?</h3>
+<ol>
+<li>Download images from Docker hub</li>
+<li>Running locally in a container</li>
+</ol>
+<p>A <strong>Container</strong> is a collection of one or more processes, organized under a single name and identifier. A container is isolated from the other processes running within a computing environment, be it a physical computer or a virtual machine (VM).</p>
 <h2 id="run-docker-containers-on">Run docker containers on</h2>
 <ul>
 <li>Local machine</li>
-<li>Corporate data center</li>
-<li>Cloud</li>
+<li>Cloud
+<ul>
+<li>Azure: Azure Container Service</li>
+<li>AWS: Elastic Container Service</li>
 </ul>
-<h2 id="basics">Basics</h2>
+</li>
+</ul>
+<h2 id="docker-commands">Docker commands</h2>
 <p><img
-        class="lazyload"
-        src="/svg/loading.min.svg"
-        data-src="/images/docker.jpg"
-        data-srcset="/images/docker.jpg, /images/docker.jpg 1.5x, /images/docker.jpg 2x"
-        data-sizes="auto"
-        alt="/images/docker.jpg"
-        title="docker" />
-<img
         class="lazyload"
         src="/svg/loading.min.svg"
         data-src="/images/dockercommand.jpg"
@@ -189,9 +197,47 @@ Controls all containers and makes them work together</p>
         data-sizes="auto"
         alt="/images/dockercommand.jpg"
         title="dockercommand" /></p>
-<h2 id="example">Example</h2>
+<p>More commands</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker --version
+</span></span><span class="line"><span class="cl">docker run -p 5000:5000 abc/to-do-rest-api:1.0.0.RELEASE
+</span></span><span class="line"><span class="cl">docker run -p 5000:5000 -d abc/to-do-rest-api:1.0.0.RELEASE // run in background
+</span></span><span class="line"><span class="cl">docker images
+</span></span><span class="line"><span class="cl">docker images history [image-id]
+</span></span><span class="line"><span class="cl">docker image remove [image-id] // remove from local
+</span></span><span class="line"><span class="cl">docker tag [repo-name].RELEASE [repo-name]:latest
+</span></span><span class="line"><span class="cl">docker container stop [container-id] // shutdown container
+</span></span><span class="line"><span class="cl">docker container ls
+</span></span><span class="line"><span class="cl">docker container pause [container-id]
+</span></span><span class="line"><span class="cl">docker container umpause [container-id]
+</span></span><span class="line"><span class="cl">docker container inspect [container-id]
+</span></span><span class="line"><span class="cl">docker events
+</span></span><span class="line"><span class="cl">docker stats
+</span></span><span class="line"><span class="cl">docker system df
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="how-do-we-build-an-image">How do we build an image?</h2>
+<p>We use docker file to specify image</p>
 <p>Think of building a machine from scratch (OS, Environment, Dependencies&hellip;)</p>
-<p>Dockerfile</p>
+<p>Dockerfile Example</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -210,7 +256,9 @@ Controls all containers and makes them work together</p>
 </span></span><span class="line"><span class="cl">CMD [&#34;python&#34;, &#34;app.py&#34;] // run on docker machine
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>docker-compose.yml</p>
+</div><h2 id="docker-compose">Docker compose</h2>
+<p>Config a YAML file, launch multi-container Docker applications</p>
+<p>docker-compose.yml</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -235,6 +283,34 @@ Controls all containers and makes them work together</p>
 </span></span><span class="line"><span class="cl">        build: ./db
 </span></span></code></pre></td></tr></table>
 </div>
+</div><p>Basics</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/docker.jpg"
+        data-srcset="/images/docker.jpg, /images/docker.jpg 1.5x, /images/docker.jpg 2x"
+        data-sizes="auto"
+        alt="/images/docker.jpg"
+        title="docker" /></p>
+<h2 id="architecture">Architecture</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Docker Client(Terminal)
+</span></span><span class="line"><span class="cl">    Docker Engine
+</span></span><span class="line"><span class="cl">        Containers
+</span></span><span class="line"><span class="cl">        Local Images
+</span></span><span class="line"><span class="cl">        Image Registry
+</span></span></code></pre></td></tr></table>
+</div>
 </div><hr>
 <h1 id="kubernetes">Kubernetes</h1>
 <h2 id="what-is-kubernetes">What is Kubernetes</h2>
@@ -242,6 +318,10 @@ Controls all containers and makes them work together</p>
 <p>Kubernetes groups the containers that support a single application or microservice into a pod. A pod is exposed to the network by way of another Kubernetes abstraction called a service. In short, the network knows about Kubernetes services and a service knows about the pod(s) that has its logic. Within each pod is one or many containers that realize the logic in the given pod.</p>
 <p>Kubernetes is a tool for running a bunch of different containsers.
 We give it some configs to describe how we want our containers to  run and interact with each other</p>
+<ol>
+<li>Pull image from docker hub &amp; Deploy it to Kubernetes</li>
+<li>Expose service</li>
+</ol>
 <h2 id="why-we-want-kubernetes">Why we want Kubernetes</h2>
 <p>We can run Kubernets on:</p>
 <ul>
@@ -265,6 +345,68 @@ We give it some configs to describe how we want our containers to  run and inter
         data-sizes="auto"
         alt="/images/kubeterms.jpg"
         title="terms" /></p>
+<p>A pod is a wrapper of a set of containers
+Pod contains:</p>
+<ul>
+<li>Name</li>
+<li>Namespace</li>
+<li>Priority</li>
+<li>PriorityClassName</li>
+<li>Node</li>
+<li>Labels</li>
+<li>Status</li>
+<li>IP</li>
+<li>Controlled by</li>
+<li>Containers
+<ul>
+<li>Contianer ID</li>
+<li>Image</li>
+<li>Image ID</li>
+</ul>
+</li>
+</ul>
+<p>A replica set ensures that a specific number of pods are always running</p>
+<p>A deploymnet ensures that a release upgrade happens without a down time</p>
+<ul>
+<li>Split traffic to V1 and V2 by 50%</li>
+<li>Rolling update (↑ V2 ↓ V1 per instance)</li>
+</ul>
+<p>Service: takes care of the communications between pods thru a permanent lifetime address (cuz pods might be shut down and broght up with new IPs)</p>
+<p>Master Node:</p>
+<ul>
+<li>Distirbuted Database
+<ul>
+<li>All config changes, servives deployments we create, scaling operations are stored here</li>
+<li>Have multiple replica of this ensures data backup</li>
+</ul>
+</li>
+<li>API Server
+<ul>
+<li>When run kubectl, it enalbes Google cloud console talks to Kuberenetes cluster</li>
+</ul>
+</li>
+<li>Scheduler
+<ul>
+<li>Assign pods to appropriate nodes</li>
+</ul>
+</li>
+<li>Controller Manager
+<ul>
+<li>Manage overall health of cluster</li>
+</ul>
+</li>
+</ul>
+<p>Node:</p>
+<ul>
+<li>Pods</li>
+<li>Node Agent
+<ul>
+<li>Monitor nodes and communicate to master node</li>
+</ul>
+</li>
+<li>Networking component</li>
+<li>Container runtime</li>
+</ul>
 <h2 id="workflow">WorkFlow</h2>
 <p>What it takes to move a Docker conatiner to a Kubernetes Cluster</p>
 <ul>
@@ -279,8 +421,7 @@ We give it some configs to describe how we want our containers to  run and inter
         data-sizes="auto"
         alt="/images/kube.jpg"
         title="kube" /></p>
-<p>Service: takes care of the communications between pods
-Config file: written in YAML, it tells kubernetes about different deployments, pods, and services that we want to create (what our cluster is running)</p>
+<p>Config file: written in YAML, it tells kubernetes about different deployments, pods, and services that we want to create (what our cluster is running)</p>
 <p>config file eg (xxx.yaml)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -302,6 +443,238 @@ Config file: written in YAML, it tells kubernetes about different deployments, p
 </span></span><span class="line"><span class="cl">    containers:
 </span></span><span class="line"><span class="cl">        - name: posts
 </span></span><span class="line"><span class="cl">            image: abc/posts:0.0.1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="kubernetes-commands">Kubernetes commands</h2>
+<p>In cloud shell</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker run -p 8080:8080 in28min/hello-world-rest-api:0.0.1.RELEASE
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
+</span></span><span class="line"><span class="cl">kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
+</span></span><span class="line"><span class="cl">kubectl scale deployment hello-world-rest-api --replicas=3
+</span></span><span class="line"><span class="cl">kubectl delete pod hello-world-rest-api-58ff5dd898-62l9d
+</span></span><span class="line"><span class="cl">kubectl autoscale deployment hello-world-rest-api --max=10 --cpu-percent=70
+</span></span><span class="line"><span class="cl">kubectl edit deployment hello-world-rest-api #minReadySeconds: 15
+</span></span><span class="line"><span class="cl">kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">gcloud container clusters get-credentials in28minutes-cluster --zone us-central1-a --project solid-course-258105
+</span></span><span class="line"><span class="cl">kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE
+</span></span><span class="line"><span class="cl">kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080
+</span></span><span class="line"><span class="cl">kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST
+</span></span><span class="line"><span class="cl">kubectl get events --sort-by=.metadata.creationTimestamp
+</span></span><span class="line"><span class="cl">kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE
+</span></span><span class="line"><span class="cl">kubectl get events --sort-by=.metadata.creationTimestamp
+</span></span><span class="line"><span class="cl">kubectl get componentstatuses
+</span></span><span class="line"><span class="cl">kubectl get pods --all-namespaces
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl get events
+</span></span><span class="line"><span class="cl">kubectl get pods
+</span></span><span class="line"><span class="cl">kubectl get replicaset
+</span></span><span class="line"><span class="cl">kubectl get deployment
+</span></span><span class="line"><span class="cl">kubectl get service
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl get pods -o wide
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl explain pods
+</span></span><span class="line"><span class="cl">kubectl get pods -o wide
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl describe pod hello-world-rest-api-58ff5dd898-9trh2
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl get replicasets
+</span></span><span class="line"><span class="cl">kubectl get replicaset
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl scale deployment hello-world-rest-api --replicas=3
+</span></span><span class="line"><span class="cl">kubectl get pods
+</span></span><span class="line"><span class="cl">kubectl get replicaset
+</span></span><span class="line"><span class="cl">kubectl get events
+</span></span><span class="line"><span class="cl">kubectl get events --sort.by=.metadata.creationTimestamp
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl get rs
+</span></span><span class="line"><span class="cl">kubectl get rs -o wide
+</span></span><span class="line"><span class="cl">kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST
+</span></span><span class="line"><span class="cl">kubectl get rs -o wide
+</span></span><span class="line"><span class="cl">kubectl get pods
+</span></span><span class="line"><span class="cl">kubectl describe pod hello-world-rest-api-85995ddd5c-msjsm
+</span></span><span class="line"><span class="cl">kubectl get events --sort-by=.metadata.creationTimestamp
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE
+</span></span><span class="line"><span class="cl">kubectl get events --sort-by=.metadata.creationTimestamp
+</span></span><span class="line"><span class="cl">kubectl get pods -o wide
+</span></span><span class="line"><span class="cl">kubectl delete pod hello-world-rest-api-67c79fd44f-n6c7l
+</span></span><span class="line"><span class="cl">kubectl get pods -o wide
+</span></span><span class="line"><span class="cl">kubectl delete pod hello-world-rest-api-67c79fd44f-8bhdt
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">gcloud container clusters get-credentials in28minutes-cluster --zone us-central1-c --project solid-course-258105
+</span></span><span class="line"><span class="cl">docker login
+</span></span><span class="line"><span class="cl">docker push in28min/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
+</span></span><span class="line"><span class="cl">docker push in28min/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl create deployment currency-exchange --image=in28min/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
+</span></span><span class="line"><span class="cl">kubectl expose deployment currency-exchange --type=LoadBalancer --port=8000
+</span></span><span class="line"><span class="cl">kubectl get svc
+</span></span><span class="line"><span class="cl">kubectl get services
+</span></span><span class="line"><span class="cl">kubectl get pods
+</span></span><span class="line"><span class="cl">kubectl get po
+</span></span><span class="line"><span class="cl">kubectl get replicaset
+</span></span><span class="line"><span class="cl">kubectl get rs
+</span></span><span class="line"><span class="cl">kubectl get all
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl create deployment currency-conversion --image=in28min/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
+</span></span><span class="line"><span class="cl">kubectl expose deployment currency-conversion --type=LoadBalancer --port=8100
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl get svc --watch
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl get deployments
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl get deployment currency-exchange -o yaml &gt;&gt; deployment.yaml 
+</span></span><span class="line"><span class="cl">kubectl get service currency-exchange -o yaml &gt;&gt; service.yaml 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl diff -f deployment.yaml
+</span></span><span class="line"><span class="cl">kubectl apply -f deployment.yaml
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl delete all -l app=currency-exchange
+</span></span><span class="line"><span class="cl">kubectl delete all -l app=currency-conversion
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl rollout history deployment currency-conversion
+</span></span><span class="line"><span class="cl">kubectl rollout history deployment currency-exchange
+</span></span><span class="line"><span class="cl">kubectl rollout undo deployment currency-exchange --to-revision=1
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl logs currency-exchange-9fc6f979b-2gmn8
+</span></span><span class="line"><span class="cl">kubectl logs -f currency-exchange-9fc6f979b-2gmn8 
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl autoscale deployment currency-exchange --min=1 --max=3 --cpu-percent=5 
+</span></span><span class="line"><span class="cl">kubectl get hpa
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl top pod
+</span></span><span class="line"><span class="cl">kubectl top nodes
+</span></span><span class="line"><span class="cl">kubectl get hpa
+</span></span><span class="line"><span class="cl">kubectl delete hpa currency-exchange
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl create configmap currency-conversion --from-literal=CURRENCY_EXCHANGE_URI=http://currency-exchange
+</span></span><span class="line"><span class="cl">kubectl get configmap
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">kubectl get configmap currency-conversion -o yaml &gt;&gt; configmap.yaml
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">watch -n 0.1 curl http://34.66.241.150:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
+</span></span><span class="line"><span class="cl"> 
+</span></span><span class="line"><span class="cl">docker push in28min/mmv2-currency-conversion-service:0.0.12-SNAPSHOT
+</span></span><span class="line"><span class="cl">docker push in28min/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="docker-vs-kubernetes">Docker vs Kubernetes</h2>
@@ -333,14 +706,15 @@ Config file: written in YAML, it tells kubernetes about different deployments, p
         </section>
     </div>
 
-    <div class="post-nav"><a href="/microservices/" class="prev" rel="prev" title="Microservices vs Monolith"><i class="fas fa-angle-left fa-fw"></i>Microservices vs Monolith</a></div>
+    <div class="post-nav"><a href="/microservices/" class="prev" rel="prev" title="Microservices vs Monolith"><i class="fas fa-angle-left fa-fw"></i>Microservices vs Monolith</a>
+            <a href="/how-are-blogs-built/" class="next" rel="next" title="How are blogs built">How are blogs built<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.95.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

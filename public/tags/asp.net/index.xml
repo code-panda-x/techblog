@@ -11,6 +11,6 @@
     <guid>https://pandax.me/c-sharp-cheatsheet/</guid>
     <description><![CDATA[Difference between C# and .Net C# is a programming language
 .Net is a framework that can run C# application
- It is a collections of library It has a CLR  .Net framwork4.X vs .Net Core3.X vs .Net 5.0 1 2 3 4 5 6 7  .Net framework .Net Core Platform Windows Cross-platform Performance Slow Better CLI IDE based Full CLI command supported (Run CMD) Packaging One big framework Delivered via modularly using Nuget .]]></description>
+It is a collections of library It has a CLR .Net framwork4.X vs .Net Core3.X vs .Net 5.0 1 2 3 4 5 6 7 .Net framework .Net Core Platform Windows Cross-platform Performance Slow Better CLI IDE based Full CLI command supported (Run CMD) Packaging One big framework Delivered via modularly using Nuget .]]></description>
 </item></channel>
 </rss>

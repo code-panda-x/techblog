@@ -12,7 +12,7 @@
     <description><![CDATA[What is SOA Service Oriented Architecture:
 Distributed system architecture where all components are designed to be services
 eg. Cloud solutions are based on SOA
-Key attributes  Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity  SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
- Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure  ESB: Enterprise bus (backbone of a SOA system)]]></description>
+Key attributes Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
+Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure ESB: Enterprise bus (backbone of a SOA system)]]></description>
 </item></channel>
 </rss>

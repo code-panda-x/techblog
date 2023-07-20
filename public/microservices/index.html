@@ -6,7 +6,8 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Microservices vs Monolith - PandaX</title><meta name="Description" content="A Blog about Tech, Life, and Productivity"><meta property="og:title" content="Microservices vs Monolith" />
-<meta property="og:description" content="MicroService  Take every app function and put it in its own service Runs in its own container Communicate via APIs  Pros  Flexibility (each microservice can be built in different languages/technologies) Less risk in change Independent scaling Faster release cycles  Monolith  Server-side systme based on single application  Pros  Good for small team Less complex Less duplication Run fast  Cons  Highly dependent (single point of failure) Language/Framework Growth Scaling issue Complex deployment  Architecture 1  Limits Microservice Microservice X Microservice Y    Questions: What is spring boot/cloud?" />
+<meta property="og:description" content="MicroService Take every app function and put it in its own service Runs in its own container Communicate via APIs But if each microservice is implemented in different languages/environment, how do we deploy? Deployment: Use Docker ! Put each microservice into containers
+Pros Flexibility (each microservice can be built in different languages/technologies) Less risk in change Independent scaling Faster release cycles Monolith Server-side systme based on single application Pros Good for small team Less complex Less duplication Run fast Cons Highly dependent (single point of failure) Language/Framework Growth Scaling issue Complex deployment Spring Boot Goal Enable quickly built applications Provide common non-functional features Not Spring boot does NOT generate code Spring boot is NOT an application server or a web server Features Quick starter projects with auto configuration" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pandax.me/microservices/" /><meta property="og:image" content="https://pandax.me/logo.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-04-22T17:35:01-05:00" />
@@ -16,7 +17,8 @@
 <meta name="twitter:image" content="https://pandax.me/logo.png"/>
 
 <meta name="twitter:title" content="Microservices vs Monolith"/>
-<meta name="twitter:description" content="MicroService  Take every app function and put it in its own service Runs in its own container Communicate via APIs  Pros  Flexibility (each microservice can be built in different languages/technologies) Less risk in change Independent scaling Faster release cycles  Monolith  Server-side systme based on single application  Pros  Good for small team Less complex Less duplication Run fast  Cons  Highly dependent (single point of failure) Language/Framework Growth Scaling issue Complex deployment  Architecture 1  Limits Microservice Microservice X Microservice Y    Questions: What is spring boot/cloud?"/>
+<meta name="twitter:description" content="MicroService Take every app function and put it in its own service Runs in its own container Communicate via APIs But if each microservice is implemented in different languages/environment, how do we deploy? Deployment: Use Docker ! Put each microservice into containers
+Pros Flexibility (each microservice can be built in different languages/technologies) Less risk in change Independent scaling Faster release cycles Monolith Server-side systme based on single application Pros Good for small team Less complex Less duplication Run fast Cons Highly dependent (single point of failure) Language/Framework Growth Scaling issue Complex deployment Spring Boot Goal Enable quickly built applications Provide common non-functional features Not Spring boot does NOT generate code Spring boot is NOT an application server or a web server Features Quick starter projects with auto configuration"/>
 <meta name="application-name" content="PandaX">
 <meta name="apple-mobile-web-app-title" content="PandaX"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +31,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/pandax.me\/microservices\/"
-        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  89 ,
+        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  321 ,
         "url": "https:\/\/pandax.me\/microservices\/","datePublished": "2022-04-22T17:35:01-05:00","dateModified": "2022-04-22T17:35:01-05:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/pandax.me\/images\/avatar.png"},"author": {
@@ -110,8 +112,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Microservices vs Monolith</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-22">2022-04-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;89 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;<span id="/microservices/" class="leancloud_visitors" data-flag-title="Microservices vs Monolith">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-22">2022-04-22</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;321 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/microservices/" class="leancloud_visitors" data-flag-title="Microservices vs Monolith">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -130,7 +132,21 @@
       <ul>
         <li><a href="#pros-1">Pros</a></li>
         <li><a href="#cons">Cons</a></li>
-        <li><a href="#architecture">Architecture</a></li>
+      </ul>
+    </li>
+    <li><a href="#spring-boot">Spring Boot</a>
+      <ul>
+        <li><a href="#goal">Goal</a></li>
+        <li><a href="#not">Not</a></li>
+        <li><a href="#features">Features</a></li>
+      </ul>
+    </li>
+    <li><a href="#startspringio-starter-appsdependencies">start.spring.io starter apps/dependencies</a></li>
+    <li><a href="#spring-vs-spring-boot-vs-spring-mvc">Spring vs Spring Boot vs Spring MVC</a>
+      <ul>
+        <li><a href="#spring-framework">Spring Framework</a></li>
+        <li><a href="#spring-mvc">Spring MVC</a></li>
+        <li><a href="#spring-boot-1">Spring Boot</a></li>
       </ul>
     </li>
   </ul>
@@ -141,6 +157,8 @@
 <li>Runs in its own container</li>
 <li>Communicate via APIs</li>
 </ul>
+<p>But if each microservice is implemented in different languages/environment, how do we deploy?
+Deployment: Use <strong>Docker !</strong> Put each microservice into containers</p>
 <h3 id="pros">Pros</h3>
 <ul>
 <li>Flexibility (each microservice can be built in different languages/technologies)</li>
@@ -167,23 +185,93 @@
 <li>Scaling issue</li>
 <li>Complex deployment</li>
 </ul>
-<h3 id="architecture">Architecture</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Limits Microservice     Microservice X      Microservice Y
-</span></span></code></pre></td></tr></table>
-</div>
-</div><hr>
+<h2 id="spring-boot">Spring Boot</h2>
+<h3 id="goal">Goal</h3>
+<ul>
+<li>Enable quickly built applications</li>
+<li>Provide common non-functional features</li>
+</ul>
+<h3 id="not">Not</h3>
+<ul>
+<li>Spring boot does <strong>NOT</strong> generate code</li>
+<li>Spring boot is <strong>NOT</strong> an application server or a web server</li>
+</ul>
+<h3 id="features">Features</h3>
+<p>Quick starter projects with auto configuration</p>
+<ul>
+<li>Web (Login, spring mvc)</li>
+<li>JPA (DB)</li>
+</ul>
+<h2 id="startspringio-starter-appsdependencies">start.spring.io starter apps/dependencies</h2>
+<ul>
+<li>Spring Web
+<ul>
+<li>@RestController
+<ul>
+<li><code>@GetMapping</code> handles REST API</li>
+</ul>
+</li>
+<li>MVC</li>
+</ul>
+</li>
+<li>Spring Boot Actuator
+<ul>
+<li>Monitor and manage application</li>
+</ul>
+</li>
+<li>Spring Boot DevTools
+<ul>
+<li>Provide fast app restarts, livereload</li>
+</ul>
+</li>
+</ul>
+<h2 id="spring-vs-spring-boot-vs-spring-mvc">Spring vs Spring Boot vs Spring MVC</h2>
+<h3 id="spring-framework">Spring Framework</h3>
+<ul>
+<li>Dependency Injection: Takes care of defining beans, dependencies, how to bind components</li>
+</ul>
+<h3 id="spring-mvc">Spring MVC</h3>
+<ul>
+<li>Web applications</li>
+</ul>
+<h3 id="spring-boot-1">Spring Boot</h3>
+<ul>
+<li>Autoconfig</li>
+</ul>
+<hr>
+<p>// 143</p>
 <p>Questions:
-What is spring boot/cloud?</p>
+What is spring boot/cloud?
+Distirbuted system regarding microservice
+load balancer what does it do?
+what is maven</p>
+<p>$$$$$$$$$$
+Draw a overall blueprint of each model
+Why use these techs
+$$$$$$$$$$</p>
 <p>Keyword</p>
 <ul>
+<li>Distributed system</li>
 <li>Maven</li>
-<li>Java Spring boot/cloud?</li>
-<li>Git</li>
+<li>Java Spring Boot?
+Dependencies:
+<ul>
+<li>Spring Boot Devtools</li>
+<li>Spring Boot Actuator</li>
+<li>Spring Web(REST, MVC)</li>
+<li>Config Client (Connect to spring cloud config)</li>
+</ul>
+</li>
+<li>REST</li>
+<li>H2 DB, SQL with JPA (Currency from / to, exchange rate)</li>
+<li>Build routes with Eureka naming server and redirect all requests thru Spring cloud gateway (Assigen different ports to different server)</li>
+<li>Circuit Breaker framwork: Resilience4j (fallback methods if ms is down)</li>
+<li>Zipkin as a distributed tracing server (as a container) connected to all ms ( to trace requests accross ms) // 174
+<ul>
+<li>What if distributed tracing server is down? Use Rabbit MQ</li>
+</ul>
+</li>
+<li>Google Cloud Kubernetes</li>
 </ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
@@ -217,8 +305,8 @@ What is spring boot/cloud?</p>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
             </noscript></div></article></div>
             </main><footer class="footer">
-        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.95.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
-                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.101.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2019 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Kehan</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
         </div>
     </footer></div>
 

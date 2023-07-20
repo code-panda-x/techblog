@@ -9,25 +9,25 @@
     <pubDate>Sat, 05 Mar 2022 22:35:38 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/add-google-analytics/</guid>
-    <description><![CDATA[Google Analytics  Register a google analytics account
-  Get your measurement ID that looks like below
- G-6ED0IWOAJK    Get gtag js script
-  1 2 3 4 5 6 7 8  &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt;    Hugo blog  Find config.]]></description>
+    <description><![CDATA[Google Analytics Register a google analytics account
+Get your measurement ID that looks like below
+G-6ED0IWOAJK Get gtag js script
+1 2 3 4 5 6 7 8 &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt; Hugo blog Find config.toml file, enable google analytics as below 1 2 3 enableGoogleAnalytics = true trackingCodeType = &#34;gtag&#34; trackingID = &#34;G-6ED0IWOAJK&#34; This is my settings above, you may just need]]></description>
 </item><item>
     <title>Rest API with Express.JS</title>
     <link>https://pandax.me/express-restapi/</link>
     <pubDate>Sun, 20 Feb 2022 13:37:22 -0600</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/express-restapi/</guid>
-    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken');  Inlucde route/file: 1 2 3 4  // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB();   File return 1 2  module.exports = connectDB; module.exports = router;   Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13  const connectDB = async () =&gt; { try{ await mongoose.]]></description>
+    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken'); Inlucde route/file: 1 2 3 4 // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB(); File return 1 2 module.exports = connectDB; module.exports = router; Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13 const connectDB = async () =&gt; { try{ await mongoose.]]></description>
 </item><item>
     <title>All you need to know about React</title>
     <link>https://pandax.me/react/</link>
     <pubDate>Wed, 02 Feb 2022 12:16:45 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/react/</guid>
-    <description><![CDATA[What is React  A JavaScript library Use component-based approach  All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI   2011 developed by Facebok developer  Advantages:
- Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency  Disadvantages:
- Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency  Angular vs React Important feature of React  React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages  What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
+    <description><![CDATA[What is React A JavaScript library Use component-based approach All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI 2011 developed by Facebok developer Advantages:
+Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency Disadvantages:
+Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency Angular vs React Important feature of React React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
 </item></channel>
 </rss>

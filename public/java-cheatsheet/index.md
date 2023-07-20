@@ -127,6 +127,7 @@ Dummy: // dummy --> head --> node1 --> node2 --> null
     tmp.addLast(node.val);
     tmp.addFirst(node.val);
     tmp.getLast();
+    tmp.add(0, val);
 
 ## ArrayList
 
@@ -157,6 +158,7 @@ Convert arraylist/linkedlist to array
     LinkedList<Integer> list = new LinkedList<Integer>();
     int[] a = list.toArray();
 
+    toArray <---> asList
 
     2D:
     List<int[]> res = new ArrayList<>();
@@ -215,6 +217,9 @@ return new String(result);  // char[] result = {'a','b'};
 Return null array:
 return new int[0]; or return new int[]{};
 
+// 2d return null
+return new int[0][]
+
 ```
 
 New:
@@ -226,9 +231,24 @@ The elements in the array allocated by new will automatically be initialized to 
     Returns the highest value
     Math.pow(10,2);
     returns double
+    Round up
+    Math.ceil(125.9)=126.0
+    Math.ceil(0.4873)=1.0
+    Math.ceil(-0.65)=-0.0
 
     Generate random number
-    https://www.educative.io/edpresso/how-to-generate-random-numbers-in-java
+    https://stackoverflow.com/questions/5887709/getting-random-numbers-in-java
+
+    import java.util.Random;
+
+    Random rand = new Random();    
+    int n = rand.nextInt(50); // Obtain a number between [0 - 49].
+
+    double random = Math.random() * 49 + 1;
+    // or
+    int random = (int )(Math.random() * 50 + 1);
+
+    random() method returns a random number between 0.0 and 0.9..., you multiply it by 50, so upper limit becomes 0.0 to 49.999... when you add 1, it becomes 1.0 to 50.999..., now when you truncate to int, you get 1 to 50. 
 
 # String
 

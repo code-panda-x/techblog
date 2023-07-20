@@ -10,7 +10,7 @@
     <author>Author</author>
     <guid>https://pandax.me/how-data-are-stored/</guid>
     <description><![CDATA[How data are ACTUALLY sotred? In a nutshell: All data are stored as 1&rsquo;s and 0&rsquo;s, 1 and 0 are represented by high/low voltage of transistors.
- Brief Introduction Data are stored in bits, neither binary nor hex. They are both representations of data.
+Brief Introduction Data are stored in bits, neither binary nor hex. They are both representations of data.
 Computer only identifies voltage levels. There will be some voltage for 1 (high) and some lower voltage for 0 (low). When ever high voltage is passed its 1 and other one is 0.]]></description>
 </item><item>
     <title>How to run a program from scratch</title>

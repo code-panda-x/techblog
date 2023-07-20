@@ -9,10 +9,9 @@
     <pubDate>Thu, 22 Jul 2021 16:33:33 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/python-cheatsheet/</guid>
-    <description><![CDATA[Where the program starts 1 2  if __name__ == &#39;__main__&#39;: # statements   Array types: List:
-1 2  letters = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;] len(letters) # Returns length of array   Tuple: is immutable!
-1  dimensions = (200, 50)   Dict:
-1  student1 = {&#39;gender&#39;: &#39;male&#39;, &#39;age&#39;: 18}   Set:
-1 2  new_set = {value1, value2, value2, ...} new_set2 = set(value)   Range function 1 2 3 4 5 6 7 8 9 10 11  # range(start, stop) for i in range(1, 10): print(i) # range(stop) start from 0 for i in range(10): print(i) # range(start, stop, step) for i in range(0, 13, 5): print(i)   If else 1 2 3 4 5 6 7 8  if condition_1: statement_block_1 # Execute if condition_1 is True elif condition_2: statement_block_2 # Execute if condition_1 is False &amp; condition_2 is True elif condition_3: statement_block 3 # Execute if condition_3 is True and 1 &amp; 2 are False else: statement_block_3 # Execute if previous conditions are all Falser   Loop 1 2 3 4 5 6 7 8 9  # While loop num = 0 while num &lt; 10: print(num) # For loop list = [1, 2, 3, 4, 5, 6] for i in list: print(i)   Functions 1 2  def function_name(parameters): expressions   Catch Exceptions 1 2 3 4 5 6  try: print(x) except: print(&#34;Something went wrong&#34;) finally: # finally will always be executed print(&#34;The &#39;try except&#39; is finished&#34;)    To be reviewd Class Encapsulation/Inheritance/Polymorphism]]></description>
+    <description><![CDATA[Where the program starts 1 2 if __name__ == &#39;__main__&#39;: # statements Self Use self to pass values between def&rsquo;s
+1 self.arr = nums Array types: List:
+1 2 3 4 5 6 7 letters = [&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;e&#39;, &#39;f&#39;, &#39;g&#39;] len(letters) # Returns length of array ## Common use list = [] list.append((a,b)) list.sort() # nlogn Tuple: is immutable!
+1 dimensions = (200, 50) Dict: Basically HashMap]]></description>
 </item></channel>
 </rss>
