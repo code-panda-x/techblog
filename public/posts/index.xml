@@ -3,7 +3,25 @@
         <title>All Posts - PandaX</title>
         <link>https://pandax.me/posts/</link>
         <description>All Posts | PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 19 Jul 2023 20:43:29 -0500</lastBuildDate><atom:link href="https://pandax.me/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jul 2023 21:03:35 -0500</lastBuildDate><atom:link href="https://pandax.me/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Async Programming</title>
+    <link>https://pandax.me/async/</link>
+    <pubDate>Wed, 26 Jul 2023 21:03:35 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/async/</guid>
+    <description><![CDATA[Async Porgramming What is async programming? Async programming is about non-blocking execution between functions.
+It enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs,
+So we don’t have to wait our time waiting for that long task to be finished
+Example Data may take long a long time to submit to/retrieve from a database. With asynchronous programming, the user can move to another screen while the function continues to execute.]]></description>
+</item><item>
+    <title>Ssr vs Csr</title>
+    <link>https://pandax.me/ssr-vs-csr/</link>
+    <pubDate>Sun, 23 Jul 2023 13:45:28 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/ssr-vs-csr/</guid>
+    <description><![CDATA[When user sends a request to a server, different server responses differently depending on the implementations.
+Server side rendering Whenever you visit a website, your browser makes a request to the server. Once the request is done processing, your browser gets back the fully rendered HTML and displays it on the screen. If you then decide to visit a different page on the website, your browser will once again make another request for the new information.]]></description>
+</item><item>
     <title>How are blogs built</title>
     <link>https://pandax.me/how-are-blogs-built/</link>
     <pubDate>Wed, 19 Jul 2023 20:43:29 -0500</pubDate>
@@ -79,28 +97,5 @@ Challenges under API testing API Documentation (need endpoint, parameters, resou
     <author>Author</author>
     <guid>https://pandax.me/express-restapi/</guid>
     <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken'); Inlucde route/file: 1 2 3 4 // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB(); File return 1 2 module.exports = connectDB; module.exports = router; Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13 const connectDB = async () =&gt; { try{ await mongoose.]]></description>
-</item><item>
-    <title>HTTP</title>
-    <link>https://pandax.me/http/</link>
-    <pubDate>Mon, 07 Feb 2022 15:41:20 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/http/</guid>
-    <description><![CDATA[HTTP methods GET: Retrieve data from a server only
-HTTP GET won&rsquo;t have payload or request body, just send URL only, it simply retrieves data POST: Add data (create a new object) on the server
-PUT: Update an existing object or resource in a server
-DELETE: Delete data from a server
-Remove is NOT an HTTP verb
-HTTP status code cheatsheet 1xx status codes: Informational requests 2xx status codes: Successful requests 3xx status codes: Redirects 4xx status codes: Client errors 5xx status codes: Server errors 1 2 3 4 5 6 7 8 9 10 11 Code Status Description 200 OK The request is successful 201 Created A new resource was successfuly created 301 Mising parameter 400 Bad request The request is invalid (My problem) 401 Unauthorized Requires authentication 403 Forbidden The client is authenticated but doesn&#39;t have permission to access the requested resource 404 Not Found The requested resource was not found (API&#39;s problem) 405 Method not allowed HTTP request method is not supported (use GET to update) 500 Internal Server error 503 Server unavailable Ref: https://stackoverflow.]]></description>
-</item><item>
-    <title>What is SOA</title>
-    <link>https://pandax.me/what-is-soa/</link>
-    <pubDate>Sat, 05 Feb 2022 12:48:49 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/what-is-soa/</guid>
-    <description><![CDATA[What is SOA Service Oriented Architecture:
-Distributed system architecture where all components are designed to be services
-eg. Cloud solutions are based on SOA
-Key attributes Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
-Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure ESB: Enterprise bus (backbone of a SOA system)]]></description>
 </item></channel>
 </rss>

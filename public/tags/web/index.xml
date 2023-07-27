@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Web - Tag - PandaX</title>
+        <link>https://pandax.me/tags/web/</link>
+        <description>Web - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Jul 2023 13:45:28 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/web/" rel="self" type="application/rss+xml" /><item>
+    <title>Ssr vs Csr</title>
+    <link>https://pandax.me/ssr-vs-csr/</link>
+    <pubDate>Sun, 23 Jul 2023 13:45:28 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/ssr-vs-csr/</guid>
+    <description><![CDATA[When user sends a request to a server, different server responses differently depending on the implementations.
+Server side rendering Whenever you visit a website, your browser makes a request to the server. Once the request is done processing, your browser gets back the fully rendered HTML and displays it on the screen. If you then decide to visit a different page on the website, your browser will once again make another request for the new information.]]></description>
+</item></channel>
+</rss>

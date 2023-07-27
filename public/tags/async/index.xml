@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Async - Tag - PandaX</title>
+        <link>https://pandax.me/tags/async/</link>
+        <description>Async - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jul 2023 21:03:35 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/async/" rel="self" type="application/rss+xml" /><item>
+    <title>Async Programming</title>
+    <link>https://pandax.me/async/</link>
+    <pubDate>Wed, 26 Jul 2023 21:03:35 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/async/</guid>
+    <description><![CDATA[Async Porgramming What is async programming? Async programming is about non-blocking execution between functions.
+It enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs,
+So we don’t have to wait our time waiting for that long task to be finished
+Example Data may take long a long time to submit to/retrieve from a database. With asynchronous programming, the user can move to another screen while the function continues to execute.]]></description>
+</item></channel>
+</rss>

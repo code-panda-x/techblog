@@ -3,7 +3,25 @@
         <title>General Tech - Category - PandaX</title>
         <link>https://pandax.me/categories/general-tech/</link>
         <description>General Tech - Category - PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 19 Jul 2023 20:43:29 -0500</lastBuildDate><atom:link href="https://pandax.me/categories/general-tech/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jul 2023 21:03:35 -0500</lastBuildDate><atom:link href="https://pandax.me/categories/general-tech/" rel="self" type="application/rss+xml" /><item>
+    <title>Async Programming</title>
+    <link>https://pandax.me/async/</link>
+    <pubDate>Wed, 26 Jul 2023 21:03:35 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/async/</guid>
+    <description><![CDATA[Async Porgramming What is async programming? Async programming is about non-blocking execution between functions.
+It enables your program to start a potentially long-running task and still be able to be responsive to other events while that task runs,
+So we don’t have to wait our time waiting for that long task to be finished
+Example Data may take long a long time to submit to/retrieve from a database. With asynchronous programming, the user can move to another screen while the function continues to execute.]]></description>
+</item><item>
+    <title>Ssr vs Csr</title>
+    <link>https://pandax.me/ssr-vs-csr/</link>
+    <pubDate>Sun, 23 Jul 2023 13:45:28 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/ssr-vs-csr/</guid>
+    <description><![CDATA[When user sends a request to a server, different server responses differently depending on the implementations.
+Server side rendering Whenever you visit a website, your browser makes a request to the server. Once the request is done processing, your browser gets back the fully rendered HTML and displays it on the screen. If you then decide to visit a different page on the website, your browser will once again make another request for the new information.]]></description>
+</item><item>
     <title>How are blogs built</title>
     <link>https://pandax.me/how-are-blogs-built/</link>
     <pubDate>Wed, 19 Jul 2023 20:43:29 -0500</pubDate>
@@ -79,27 +97,5 @@ Automic services: well-defined and independent Composite: fusion of two or more 
     <description><![CDATA[What is React A JavaScript library Use component-based approach All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI 2011 developed by Facebok developer Advantages:
 Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency Disadvantages:
 Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency Angular vs React Important feature of React React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
-</item><item>
-    <title>What is OOP</title>
-    <link>https://pandax.me/oop/</link>
-    <pubDate>Tue, 01 Feb 2022 21:08:59 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/oop/</guid>
-    <description><![CDATA[Class Blue print of the objects
-Object An object is an instance of a class (Class -&gt; blueprint, Object -&gt; house)
-Constructor Initialize the state of an object
-Destructor Automatically called at the end of lifetime of an object Free up the acuired resources
-Is-A Relationship Inheritance (Parent-Child)
-class Apple extends Fruit { } Foo is-a Bar:
-public class Foo extends Bar{} Has-A Relationship Composition: Creating instances which have references to other objects (Objects depend on each other)]]></description>
-</item><item>
-    <title>How Data Are Stored</title>
-    <link>https://pandax.me/how-data-are-stored/</link>
-    <pubDate>Sun, 30 Jan 2022 21:57:04 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/how-data-are-stored/</guid>
-    <description><![CDATA[How data are ACTUALLY sotred? In a nutshell: All data are stored as 1&rsquo;s and 0&rsquo;s, 1 and 0 are represented by high/low voltage of transistors.
-Brief Introduction Data are stored in bits, neither binary nor hex. They are both representations of data.
-Computer only identifies voltage levels. There will be some voltage for 1 (high) and some lower voltage for 0 (low). When ever high voltage is passed its 1 and other one is 0.]]></description>
 </item></channel>
 </rss>
