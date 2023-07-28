@@ -3,7 +3,18 @@
         <title>General Tech - Category - PandaX</title>
         <link>https://pandax.me/categories/general-tech/</link>
         <description>General Tech - Category - PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jul 2023 21:03:35 -0500</lastBuildDate><atom:link href="https://pandax.me/categories/general-tech/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 Jul 2023 23:38:46 -0500</lastBuildDate><atom:link href="https://pandax.me/categories/general-tech/" rel="self" type="application/rss+xml" /><item>
+    <title>Thread Process</title>
+    <link>https://pandax.me/thread-process/</link>
+    <pubDate>Thu, 27 Jul 2023 23:38:46 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/thread-process/</guid>
+    <description><![CDATA[Thread vs Process What is a Thread, really? Short answer:
+Thread is a subset of a process Longer answer:
+Thread is an independent set of values for CPU registers Detailed answer:
+A thread is an execution context for CPU, which is all the information CPU needs to execute instructions. Essentially: More about thread
+Thread components: Program counter: keeps track of which instruc­tion to execute next Stack: which contains the execution history Registers: which hold its current working variables Example: A single thread could be displaying the current tab you’re in, and a different thread could be another tab.]]></description>
+</item><item>
     <title>Async Programming</title>
     <link>https://pandax.me/async/</link>
     <pubDate>Wed, 26 Jul 2023 21:03:35 -0500</pubDate>
@@ -88,14 +99,5 @@ Distributed system architecture where all components are designed to be services
 eg. Cloud solutions are based on SOA
 Key attributes Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
 Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure ESB: Enterprise bus (backbone of a SOA system)]]></description>
-</item><item>
-    <title>All you need to know about React</title>
-    <link>https://pandax.me/react/</link>
-    <pubDate>Wed, 02 Feb 2022 12:16:45 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/react/</guid>
-    <description><![CDATA[What is React A JavaScript library Use component-based approach All individual entities become completely reusable and independent of each other Rendering the application is easy and not dependent on other components of the UI 2011 developed by Facebok developer Advantages:
-Easy for UI testing High readability Both client-side and server-side Easy understanding and boost efficiency Disadvantages:
-Writing code is compliciated Hard to cope its syntaxes and methods React is a simple library, not a complete framework, so it calls for dependency Angular vs React Important feature of React React makes use of a single-direction data flow model It deals with complete server-side data processing and handling React uses Virtual DOM that has many advantages What is DOM (Document object model) When load HTML file, DOM is the representation of the same HTML document in a different format for Javascript access]]></description>
 </item></channel>
 </rss>

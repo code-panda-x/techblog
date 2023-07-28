@@ -3,7 +3,18 @@
         <title>All Posts - PandaX</title>
         <link>https://pandax.me/posts/</link>
         <description>All Posts | PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 26 Jul 2023 21:03:35 -0500</lastBuildDate><atom:link href="https://pandax.me/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 Jul 2023 23:38:46 -0500</lastBuildDate><atom:link href="https://pandax.me/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Thread Process</title>
+    <link>https://pandax.me/thread-process/</link>
+    <pubDate>Thu, 27 Jul 2023 23:38:46 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/thread-process/</guid>
+    <description><![CDATA[Thread vs Process What is a Thread, really? Short answer:
+Thread is a subset of a process Longer answer:
+Thread is an independent set of values for CPU registers Detailed answer:
+A thread is an execution context for CPU, which is all the information CPU needs to execute instructions. Essentially: More about thread
+Thread components: Program counter: keeps track of which instruc­tion to execute next Stack: which contains the execution history Registers: which hold its current working variables Example: A single thread could be displaying the current tab you’re in, and a different thread could be another tab.]]></description>
+</item><item>
     <title>Async Programming</title>
     <link>https://pandax.me/async/</link>
     <pubDate>Wed, 26 Jul 2023 21:03:35 -0500</pubDate>
@@ -90,12 +101,5 @@ G-6ED0IWOAJK Get gtag js script
     <description><![CDATA[What is API Application Programming Interface: allows two applications to talk to each other
 What is REST API REST (Representational State Transfer): A set of functions for developers to perform requests and receive responses using HTTP protocol
 Challenges under API testing API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens) Core components of HTTP request HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content) What is Payload Payload/body is secured input data sent to API In JSON What is JSON JavaScript Object Notation Data format represented as String-text Authentication Techniques used in API&rsquo;s Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth Why API testing is suitable for automation testing API testing is:]]></description>
-</item><item>
-    <title>Rest API with Express.JS</title>
-    <link>https://pandax.me/express-restapi/</link>
-    <pubDate>Sun, 20 Feb 2022 13:37:22 -0600</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/express-restapi/</guid>
-    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken'); Inlucde route/file: 1 2 3 4 // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB(); File return 1 2 module.exports = connectDB; module.exports = router; Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13 const connectDB = async () =&gt; { try{ await mongoose.]]></description>
 </item></channel>
 </rss>

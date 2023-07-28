@@ -5,37 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Async Programming - PandaX</title><meta name="Description" content="What is async programming"><meta property="og:title" content="Async Programming" />
-<meta property="og:description" content="What is async programming" />
+        <title>Thread Process - PandaX</title><meta name="Description" content="Thread vs Process"><meta property="og:title" content="Thread Process" />
+<meta property="og:description" content="Thread vs Process" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pandax.me/async/" /><meta property="og:image" content="https://pandax.me/logo.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-07-26T21:03:35-05:00" />
-<meta property="article:modified_time" content="2023-07-26T21:03:35-05:00" />
+<meta property="og:url" content="https://pandax.me/thread-process/" /><meta property="og:image" content="https://pandax.me/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-07-27T23:38:46-05:00" />
+<meta property="article:modified_time" content="2023-07-27T23:38:46-05:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://pandax.me/logo.png"/>
 
-<meta name="twitter:title" content="Async Programming"/>
-<meta name="twitter:description" content="What is async programming"/>
+<meta name="twitter:title" content="Thread Process"/>
+<meta name="twitter:description" content="Thread vs Process"/>
 <meta name="application-name" content="PandaX">
 <meta name="apple-mobile-web-app-title" content="PandaX"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://pandax.me/async/" /><link rel="prev" href="https://pandax.me/ssr-vs-csr/" /><link rel="next" href="https://pandax.me/thread-process/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://pandax.me/thread-process/" /><link rel="prev" href="https://pandax.me/async/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Async Programming",
+        "headline": "Thread Process",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/pandax.me\/async\/"
-        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Async, Programming","wordcount":  318 ,
-        "url": "https:\/\/pandax.me\/async\/","datePublished": "2023-07-26T21:03:35-05:00","dateModified": "2023-07-26T21:03:35-05:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@id": "https:\/\/pandax.me\/thread-process\/"
+        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "OS","wordcount":  260 ,
+        "url": "https:\/\/pandax.me\/thread-process\/","datePublished": "2023-07-27T23:38:46-05:00","dateModified": "2023-07-27T23:38:46-05:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/pandax.me\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Kehan"
-            },"description": "What is async programming"
+            },"description": "Thread vs Process"
     }
     </script></head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -47,7 +47,7 @@
         </div>
         <div class="menu">
             <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://kehanmeng.com" rel="noopener noreffer" target="_blank"> Portfolio </a><a class="menu-item" href="https://github.com/code-panda-x" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item language" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/async/" selected>English</option></select>
+                        <select class="language-select" id="language-select-desktop" onchange="location = this.value;"><option value="/thread-process/" selected>English</option></select>
                     </a><span class="menu-item search" id="search-desktop">
                         <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
                         <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
@@ -94,7 +94,7 @@
                 </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://kehanmeng.com" title="" rel="noopener noreffer" target="_blank">Portfolio</a><a class="menu-item" href="https://github.com/code-panda-x" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
                 <i class="fas fa-adjust fa-fw"></i>
             </a><a href="javascript:void(0);" class="menu-item" title="Select Language">English<i class="fas fa-chevron-right fa-fw"></i>
-                    <select class="language-select" onchange="location = this.value;"><option value="/async/" selected>English</option></select>
+                    <select class="language-select" onchange="location = this.value;"><option value="/thread-process/" selected>English</option></select>
                 </a></div>
     </div>
 </header>
@@ -108,10 +108,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Async Programming</h1><h2 class="single-subtitle">Async Programming</h2><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Thread Process</h1><h2 class="single-subtitle">Thread vs Process</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/general-tech/"><i class="far fa-folder fa-fw"></i>General Tech</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-26">2023-07-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;318 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/async/" class="leancloud_visitors" data-flag-title="Async Programming">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-27">2023-07-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;260 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/thread-process/" class="leancloud_visitors" data-flag-title="Thread Process">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -121,64 +121,150 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#async-porgramming">Async Porgramming</a>
+    <li><a href="#what-is-a-thread-really">What is a Thread, really?</a>
       <ul>
-        <li><a href="#what-is-async-programming">What is async programming?</a>
-          <ul>
-            <li><a href="#example">Example</a></li>
-          </ul>
-        </li>
-        <li><a href="#sync-vs-async">Sync vs Async</a></li>
-        <li><a href="#c-async-implementation">C# Async Implementation</a></li>
+        <li><a href="#thread-components">Thread components:</a></li>
+        <li><a href="#example">Example:</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-is-a-process-really">What is a Process, really?</a>
+      <ul>
+        <li><a href="#process-components">Process components:</a></li>
+        <li><a href="#example-1">Example:</a></li>
+      </ul>
+    </li>
+    <li><a href="#thread-vs-process-1">Thread vs Process</a>
+      <ul>
+        <li><a href="#comparsion-table">Comparsion Table</a></li>
+        <li><a href="#resource-sharing-difference">Resource Sharing Difference</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="async-porgramming">Async Porgramming</h2>
-<h3 id="what-is-async-programming">What is async programming?</h3>
-<p>Async programming is about <strong>non-blocking</strong> execution between functions.</p>
-<p>It enables your program to <strong>start a potentially long-running task</strong> and still be able to <strong>be responsive to other events</strong> while that task runs,</p>
-<p>So we don’t have to wait our time waiting for that long task to be finished</p>
-<h4 id="example">Example</h4>
-<p>Data may take long a long time to submit to/retrieve from a database. With asynchronous programming, the user can move to another screen while the function continues to execute. When a photo is loaded and sent on Instagram, the user does not have to stay on the same screen waiting for the photo to finish loading. The user can continue in the app or leave the app while the photo loads.</p>
-<p>This can be achieved by taking a call-back reference. The async call takes a call-back reference and returns execution back to your code as soon as the request has been placed with the remote system. Your UI can continue to respond to the user while the remote system does whatever processing is required, once it returns the data to your call-back method then that method can update the UI (“Photo Uploaded!”) as appropriate.</p>
-<h3 id="sync-vs-async">Sync vs Async</h3>
+            </div><div class="content" id="content"><h1 id="thread-vs-process">Thread vs Process</h1>
+<h2 id="what-is-a-thread-really">What is a Thread, really?</h2>
 <ul>
-<li>Synchronous: you cook the eggs, then you cook the toast.</li>
-<li>Asynchronous (single threaded): you start the eggs cooking and set a timer. You start the toast cooking, and set a timer. While they are both cooking, you clean the kitchen. When the timers go off you take the eggs off the heat and the toast out of the toaster and serve them.</li>
-<li>Asynchronous (multi-threaded): you hire two more cooks, one to cook eggs and one to cook toast. Now you have the problem of coordinating the cooks so that they do not conflict with each other in the kitchen when sharing resources.</li>
+<li>
+<p>Short answer:</p>
+<ul>
+<li>Thread is <strong>a subset of a process</strong></li>
 </ul>
-<p>Async programming can be applied to single or multi-threading</p>
-<h3 id="c-async-implementation">C# Async Implementation</h3>
-<p><a href="https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/" target="_blank" rel="noopener noreffer">https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/</a></p>
-<p><a href="https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/async-scenarios" target="_blank" rel="noopener noreffer">https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/async-scenarios</a></p>
+</li>
+<li>
+<p>Longer answer:</p>
+<ul>
+<li>Thread is an independent <strong>set of values</strong> for CPU registers</li>
+</ul>
+</li>
+<li>
+<p>Detailed answer:</p>
+<ul>
+<li>A thread is an <strong>execution context for CPU</strong>, which is all the information CPU needs to execute instructions. Essentially:</li>
+</ul>
+</li>
+</ul>
+<p><a href="https://stackoverflow.com/questions/5201852/what-is-a-thread-really" target="_blank" rel="noopener noreffer">More about thread</a></p>
+<h3 id="thread-components">Thread components:</h3>
+<ul>
+<li>Program counter: keeps track of which instruc­tion to execute next</li>
+<li>Stack: which contains the execution history</li>
+<li>Registers: which hold its current working variables</li>
+</ul>
+<h3 id="example">Example:</h3>
+<blockquote>
+<p>A single thread could be displaying the current tab you’re in, and a different thread could be another tab.</p>
+</blockquote>
+<h2 id="what-is-a-process-really">What is a Process, really?</h2>
+<ul>
+<li>
+<p>Short answer:</p>
+<ul>
+<li>Process is <strong>a running program</strong></li>
+</ul>
+</li>
+<li>
+<p>Long answer:</p>
+<ul>
+<li>The process model is based on two independent concepts: <strong>resource grouping</strong> and <strong>execution (thread)</strong></li>
+</ul>
+</li>
+</ul>
+<p><a href="https://byjus.com/gate/process-in-operating-system-notes/#:~:text=A%20process%20is%20a%20running,is%20an%20%27active%27%20entity" target="_blank" rel="noopener noreffer">More about process</a></p>
+<h3 id="process-components">Process components:</h3>
+<ul>
+<li>stack: stores functional calls, local variables</li>
+<li>heap: memory that is dynamically allocated to a process during its execution</li>
+<li>text/code: code instructions</li>
+<li>data: static variables</li>
+</ul>
+<h3 id="example-1">Example:</h3>
+<blockquote>
+<p>When you double click on the Google Chrome icon on your computer, you start a process which will run the Google Chrome program</p>
+</blockquote>
+<h2 id="thread-vs-process-1">Thread vs Process</h2>
+<p>Essentially: Processes are used to <strong>group resources together</strong>; threads are the entities <strong>scheduled for execution</strong> on the CPU.</p>
+<h3 id="comparsion-table">Comparsion Table</h3>
+<table>
+<thead>
+<tr>
+<th>Process</th>
+<th style="text-align:center">Thread</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Process is a running program</td>
+<td style="text-align:center">Thread is a subset of a process</td>
+</tr>
+<tr>
+<td>Process  is heavyweight</td>
+<td style="text-align:center">Thread is lightweight</td>
+</tr>
+<tr>
+<td>The process is independent</td>
+<td style="text-align:center">Threads share memory</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resource-sharing-difference">Resource Sharing Difference</h3>
+<ul>
+<li>
+<p>Processes have separate address spaces (indepedent)</p>
+</li>
+<li>
+<p>For multiple threads in the same process</p>
+<ul>
+<li>Threads share same address space and code, data, heap segments</li>
+<li>Threads <strong>DO NOT SHARE STACK</strong></li>
+</ul>
+</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2023-07-26</span>
+                <span>Updated on 2023-07-27</span>
             </div>
             <div class="post-info-license"></div>
         </div>
         <div class="post-info-line">
             <div class="post-info-md"><span>
-                            <a class="link-to-markdown" href="/async/index.md" target="_blank">Read Markdown</a>
+                            <a class="link-to-markdown" href="/thread-process/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://pandax.me/async/" data-title="Async Programming" data-hashtags="Async,Programming"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://pandax.me/async/" data-hashtag="Async"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://pandax.me/async/" data-title="Async Programming"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://pandax.me/async/" data-title="Async Programming"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://pandax.me/async/" data-title="Async Programming"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://pandax.me/thread-process/" data-title="Thread Process" data-hashtags="OS"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://pandax.me/thread-process/" data-hashtag="OS"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://pandax.me/thread-process/" data-title="Thread Process"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://pandax.me/thread-process/" data-title="Thread Process"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://pandax.me/thread-process/" data-title="Thread Process"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
 
     <div class="post-info-more">
-        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/async/">Async</a>,&nbsp;<a href="/tags/programming/">Programming</a></section>
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/os/">OS</a></section>
         <section>
             <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/ssr-vs-csr/" class="prev" rel="prev" title="Ssr vs Csr"><i class="fas fa-angle-left fa-fw"></i>Ssr vs Csr</a>
-            <a href="/thread-process/" class="next" rel="next" title="Thread Process">Thread Process<i class="fas fa-angle-right fa-fw"></i></a></div>
+    <div class="post-nav"><a href="/async/" class="prev" rel="prev" title="Async Programming"><i class="fas fa-angle-left fa-fw"></i>Async Programming</a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.
