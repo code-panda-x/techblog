@@ -1,7 +1,5 @@
-# Thread Process
-
-
 # Thread vs Process
+
 
 ## What is a Thread, really?
 

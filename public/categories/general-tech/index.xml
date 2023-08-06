@@ -3,13 +3,28 @@
         <title>General Tech - Category - PandaX</title>
         <link>https://pandax.me/categories/general-tech/</link>
         <description>General Tech - Category - PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 Jul 2023 23:38:46 -0500</lastBuildDate><atom:link href="https://pandax.me/categories/general-tech/" rel="self" type="application/rss+xml" /><item>
-    <title>Thread Process</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Aug 2023 15:19:27 -0500</lastBuildDate><atom:link href="https://pandax.me/categories/general-tech/" rel="self" type="application/rss+xml" /><item>
+    <title>Multithreading</title>
+    <link>https://pandax.me/multithreading/</link>
+    <pubDate>Sun, 06 Aug 2023 15:19:27 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/multithreading/</guid>
+    <description><![CDATA[Multithreading on a Single Processor The execution of multiple threads on a single CPU Multithreading on a single processor gives the illusion of running in parallel. In reality, the processor is switching by using a scheduling algorithm. Or, it’s switching based on a combination of external inputs (interrupts) and how the threads have been prioritized. These threads run concurrently and they share resources For example, this is a bit like chatting with different people through various IM windows; although you’re actually switching back and forth, the net result is that you’re having multiple conversations at the same time.]]></description>
+</item><item>
+    <title>Concurrency vs Parallelism</title>
+    <link>https://pandax.me/concurrency/</link>
+    <pubDate>Mon, 31 Jul 2023 20:30:01 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/concurrency/</guid>
+    <description><![CDATA[Concurrency (Multithreading on a Single Processor) Concurrency means executing multiple tasks at the same time but not necessarily simultaneously. When you have to perform more than one task but you have a single resource then we go for concurrency. In a single-core environment, concurrency is achieved by context switching. (the execution of multiple tasks is interleaved, instead of each task being executed sequentially one after another.)
+For example: This is a bit like chatting with different people through various IM windows; although you’re actually switching back and forth, the net result is that you’re having multiple conversations at the same time.]]></description>
+</item><item>
+    <title>Thread vs Process</title>
     <link>https://pandax.me/thread-process/</link>
     <pubDate>Thu, 27 Jul 2023 23:38:46 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/thread-process/</guid>
-    <description><![CDATA[Thread vs Process What is a Thread, really? Short answer:
+    <description><![CDATA[What is a Thread, really? Short answer:
 Thread is a subset of a process Longer answer:
 Thread is an independent set of values for CPU registers Detailed answer:
 A thread is an execution context for CPU, which is all the information CPU needs to execute instructions. Essentially: More about thread
@@ -76,28 +91,5 @@ Challenges under API testing API Documentation (need endpoint, parameters, resou
     <author>Author</author>
     <guid>https://pandax.me/express-restapi/</guid>
     <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken'); Inlucde route/file: 1 2 3 4 // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB(); File return 1 2 module.exports = connectDB; module.exports = router; Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13 const connectDB = async () =&gt; { try{ await mongoose.]]></description>
-</item><item>
-    <title>HTTP</title>
-    <link>https://pandax.me/http/</link>
-    <pubDate>Mon, 07 Feb 2022 15:41:20 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/http/</guid>
-    <description><![CDATA[HTTP methods GET: Retrieve data from a server only
-HTTP GET won&rsquo;t have payload or request body, just send URL only, it simply retrieves data POST: Add data (create a new object) on the server
-PUT: Update an existing object or resource in a server
-DELETE: Delete data from a server
-Remove is NOT an HTTP verb
-HTTP status code cheatsheet 1xx status codes: Informational requests 2xx status codes: Successful requests 3xx status codes: Redirects 4xx status codes: Client errors 5xx status codes: Server errors 1 2 3 4 5 6 7 8 9 10 11 Code Status Description 200 OK The request is successful 201 Created A new resource was successfuly created 301 Mising parameter 400 Bad request The request is invalid (My problem) 401 Unauthorized Requires authentication 403 Forbidden The client is authenticated but doesn&#39;t have permission to access the requested resource 404 Not Found The requested resource was not found (API&#39;s problem) 405 Method not allowed HTTP request method is not supported (use GET to update) 500 Internal Server error 503 Server unavailable Ref: https://stackoverflow.]]></description>
-</item><item>
-    <title>What is SOA</title>
-    <link>https://pandax.me/what-is-soa/</link>
-    <pubDate>Sat, 05 Feb 2022 12:48:49 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/what-is-soa/</guid>
-    <description><![CDATA[What is SOA Service Oriented Architecture:
-Distributed system architecture where all components are designed to be services
-eg. Cloud solutions are based on SOA
-Key attributes Services over components Interoperability &amp; Cross platform Loose coupling &amp; Distributed Abstraction against complexity SOA Components Services: Pieces of software that are autonomous, self-contained and accessible
-Automic services: well-defined and independent Composite: fusion of two or more automic services Types: frontend, integration, business, public enterprise, infrastructure ESB: Enterprise bus (backbone of a SOA system)]]></description>
 </item></channel>
 </rss>

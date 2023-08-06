@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Thread Process - PandaX</title><meta name="Description" content="Thread vs Process"><meta property="og:title" content="Thread Process" />
+        <title>Thread vs Process - PandaX</title><meta name="Description" content="Thread vs Process"><meta property="og:title" content="Thread vs Process" />
 <meta property="og:description" content="Thread vs Process" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pandax.me/thread-process/" /><meta property="og:image" content="https://pandax.me/logo.png"/><meta property="article:section" content="posts" />
@@ -15,21 +15,21 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://pandax.me/logo.png"/>
 
-<meta name="twitter:title" content="Thread Process"/>
+<meta name="twitter:title" content="Thread vs Process"/>
 <meta name="twitter:description" content="Thread vs Process"/>
 <meta name="application-name" content="PandaX">
 <meta name="apple-mobile-web-app-title" content="PandaX"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://pandax.me/thread-process/" /><link rel="prev" href="https://pandax.me/async/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://pandax.me/thread-process/" /><link rel="prev" href="https://pandax.me/async/" /><link rel="next" href="https://pandax.me/concurrency/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Thread Process",
+        "headline": "Thread vs Process",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/pandax.me\/thread-process\/"
-        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "OS","wordcount":  260 ,
+        },"image": ["https:\/\/pandax.me\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "OS","wordcount":  257 ,
         "url": "https:\/\/pandax.me\/thread-process\/","datePublished": "2023-07-27T23:38:46-05:00","dateModified": "2023-07-27T23:38:46-05:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/pandax.me\/images\/avatar.png"},"author": {
@@ -108,10 +108,10 @@
                 <div class="container"><div class="toc" id="toc-auto">
             <h2 class="toc-title">Contents</h2>
             <div class="toc-content" id="toc-content-auto"></div>
-        </div><article class="page single"><h1 class="single-title animated flipInX">Thread Process</h1><h2 class="single-subtitle">Thread vs Process</h2><div class="post-meta">
+        </div><article class="page single"><h1 class="single-title animated flipInX">Thread vs Process</h1><h2 class="single-subtitle">Thread vs Process</h2><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Kehan</a></span>&nbsp;<span class="post-category">included in <a href="/categories/general-tech/"><i class="far fa-folder fa-fw"></i>General Tech</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-27">2023-07-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;260 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/thread-process/" class="leancloud_visitors" data-flag-title="Thread Process">
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-07-27">2023-07-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;257 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;<span id="/thread-process/" class="leancloud_visitors" data-flag-title="Thread vs Process">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;views
                     </span>&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
@@ -133,7 +133,7 @@
         <li><a href="#example-1">Example:</a></li>
       </ul>
     </li>
-    <li><a href="#thread-vs-process-1">Thread vs Process</a>
+    <li><a href="#thread-vs-process">Thread vs Process</a>
       <ul>
         <li><a href="#comparsion-table">Comparsion Table</a></li>
         <li><a href="#resource-sharing-difference">Resource Sharing Difference</a></li>
@@ -141,8 +141,7 @@
     </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h1 id="thread-vs-process">Thread vs Process</h1>
-<h2 id="what-is-a-thread-really">What is a Thread, really?</h2>
+            </div><div class="content" id="content"><h2 id="what-is-a-thread-really">What is a Thread, really?</h2>
 <ul>
 <li>
 <p>Short answer:</p>
@@ -201,7 +200,7 @@
 <blockquote>
 <p>When you double click on the Google Chrome icon on your computer, you start a process which will run the Google Chrome program</p>
 </blockquote>
-<h2 id="thread-vs-process-1">Thread vs Process</h2>
+<h2 id="thread-vs-process">Thread vs Process</h2>
 <p>Essentially: Processes are used to <strong>group resources together</strong>; threads are the entities <strong>scheduled for execution</strong> on the CPU.</p>
 <h3 id="comparsion-table">Comparsion Table</h3>
 <table>
@@ -252,7 +251,7 @@
                             <a class="link-to-markdown" href="/thread-process/index.md" target="_blank">Read Markdown</a>
                         </span></div>
             <div class="post-info-share">
-                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://pandax.me/thread-process/" data-title="Thread Process" data-hashtags="OS"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://pandax.me/thread-process/" data-hashtag="OS"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://pandax.me/thread-process/" data-title="Thread Process"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://pandax.me/thread-process/" data-title="Thread Process"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://pandax.me/thread-process/" data-title="Thread Process"><i class="fab fa-weibo fa-fw"></i></a></span>
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://pandax.me/thread-process/" data-title="Thread vs Process" data-hashtags="OS"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://pandax.me/thread-process/" data-hashtag="OS"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="https://pandax.me/thread-process/" data-title="Thread vs Process"><i class="fab fa-hacker-news fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://pandax.me/thread-process/" data-title="Thread vs Process"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@2.14.0/icons/line.svg"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="https://pandax.me/thread-process/" data-title="Thread vs Process"><i class="fab fa-weibo fa-fw"></i></a></span>
             </div>
         </div>
     </div>
@@ -264,7 +263,8 @@
         </section>
     </div>
 
-    <div class="post-nav"><a href="/async/" class="prev" rel="prev" title="Async Programming"><i class="fas fa-angle-left fa-fw"></i>Async Programming</a></div>
+    <div class="post-nav"><a href="/async/" class="prev" rel="prev" title="Async Programming"><i class="fas fa-angle-left fa-fw"></i>Async Programming</a>
+            <a href="/concurrency/" class="next" rel="next" title="Concurrency vs Parallelism">Concurrency vs Parallelism<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="valine" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://valine.js.org/">Valine</a>.

@@ -3,13 +3,28 @@
         <title>OS - Tag - PandaX</title>
         <link>https://pandax.me/tags/os/</link>
         <description>OS - Tag - PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 Jul 2023 23:38:46 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/os/" rel="self" type="application/rss+xml" /><item>
-    <title>Thread Process</title>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Aug 2023 15:19:27 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/os/" rel="self" type="application/rss+xml" /><item>
+    <title>Multithreading</title>
+    <link>https://pandax.me/multithreading/</link>
+    <pubDate>Sun, 06 Aug 2023 15:19:27 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/multithreading/</guid>
+    <description><![CDATA[Multithreading on a Single Processor The execution of multiple threads on a single CPU Multithreading on a single processor gives the illusion of running in parallel. In reality, the processor is switching by using a scheduling algorithm. Or, it’s switching based on a combination of external inputs (interrupts) and how the threads have been prioritized. These threads run concurrently and they share resources For example, this is a bit like chatting with different people through various IM windows; although you’re actually switching back and forth, the net result is that you’re having multiple conversations at the same time.]]></description>
+</item><item>
+    <title>Concurrency vs Parallelism</title>
+    <link>https://pandax.me/concurrency/</link>
+    <pubDate>Mon, 31 Jul 2023 20:30:01 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/concurrency/</guid>
+    <description><![CDATA[Concurrency (Multithreading on a Single Processor) Concurrency means executing multiple tasks at the same time but not necessarily simultaneously. When you have to perform more than one task but you have a single resource then we go for concurrency. In a single-core environment, concurrency is achieved by context switching. (the execution of multiple tasks is interleaved, instead of each task being executed sequentially one after another.)
+For example: This is a bit like chatting with different people through various IM windows; although you’re actually switching back and forth, the net result is that you’re having multiple conversations at the same time.]]></description>
+</item><item>
+    <title>Thread vs Process</title>
     <link>https://pandax.me/thread-process/</link>
     <pubDate>Thu, 27 Jul 2023 23:38:46 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/thread-process/</guid>
-    <description><![CDATA[Thread vs Process What is a Thread, really? Short answer:
+    <description><![CDATA[What is a Thread, really? Short answer:
 Thread is a subset of a process Longer answer:
 Thread is an independent set of values for CPU registers Detailed answer:
 A thread is an execution context for CPU, which is all the information CPU needs to execute instructions. Essentially: More about thread

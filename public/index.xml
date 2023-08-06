@@ -3,15 +3,30 @@
         <title>PandaX</title>
         <link>https://pandax.me/</link>
         <description>A Blog about Tech, Life, and Productivity</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 27 Jul 2023 23:38:46 -0500</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Aug 2023 15:19:27 -0500</lastBuildDate>
             <atom:link href="https://pandax.me/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>Thread Process</title>
+    <title>Multithreading</title>
+    <link>https://pandax.me/multithreading/</link>
+    <pubDate>Sun, 06 Aug 2023 15:19:27 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/multithreading/</guid>
+    <description><![CDATA[Multithreading on a Single Processor The execution of multiple threads on a single CPU Multithreading on a single processor gives the illusion of running in parallel. In reality, the processor is switching by using a scheduling algorithm. Or, it’s switching based on a combination of external inputs (interrupts) and how the threads have been prioritized. These threads run concurrently and they share resources For example, this is a bit like chatting with different people through various IM windows; although you’re actually switching back and forth, the net result is that you’re having multiple conversations at the same time.]]></description>
+</item><item>
+    <title>Concurrency vs Parallelism</title>
+    <link>https://pandax.me/concurrency/</link>
+    <pubDate>Mon, 31 Jul 2023 20:30:01 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/concurrency/</guid>
+    <description><![CDATA[Concurrency (Multithreading on a Single Processor) Concurrency means executing multiple tasks at the same time but not necessarily simultaneously. When you have to perform more than one task but you have a single resource then we go for concurrency. In a single-core environment, concurrency is achieved by context switching. (the execution of multiple tasks is interleaved, instead of each task being executed sequentially one after another.)
+For example: This is a bit like chatting with different people through various IM windows; although you’re actually switching back and forth, the net result is that you’re having multiple conversations at the same time.]]></description>
+</item><item>
+    <title>Thread vs Process</title>
     <link>https://pandax.me/thread-process/</link>
     <pubDate>Thu, 27 Jul 2023 23:38:46 -0500</pubDate>
     <author>Author</author>
     <guid>https://pandax.me/thread-process/</guid>
-    <description><![CDATA[Thread vs Process What is a Thread, really? Short answer:
+    <description><![CDATA[What is a Thread, really? Short answer:
 Thread is a subset of a process Longer answer:
 Thread is an independent set of values for CPU registers Detailed answer:
 A thread is an execution context for CPU, which is all the information CPU needs to execute instructions. Essentially: More about thread
@@ -84,24 +99,5 @@ resources A resource has an URI, it is what you want to present in your applicat
     <description><![CDATA[Method 1 Navigate to
 System Preferences Spotlights Privacy Add your local disk to the list Remove your local disk from the list The above steps will reindex spotlight on the selected disk Method 2 In terminal run:
 1 2 sudo mdutil -E / sudo mdutil -a -i on Above commands fixed everything for me]]></description>
-</item><item>
-    <title>Add Google Analytics to Hugo Blog</title>
-    <link>https://pandax.me/add-google-analytics/</link>
-    <pubDate>Sat, 05 Mar 2022 22:35:38 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/add-google-analytics/</guid>
-    <description><![CDATA[Google Analytics Register a google analytics account
-Get your measurement ID that looks like below
-G-6ED0IWOAJK Get gtag js script
-1 2 3 4 5 6 7 8 &lt;!-- Global site tag (gtag.js) - Google Analytics --&gt; &lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-6ED0IWOAJK&#34;&gt;&lt;/script&gt; &lt;script&gt; window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag(&#39;js&#39;, new Date()); gtag(&#39;config&#39;, &#39;G-6ED0KEHXFZ&#39;); &lt;/script&gt; Hugo blog Find config.toml file, enable google analytics as below 1 2 3 enableGoogleAnalytics = true trackingCodeType = &#34;gtag&#34; trackingID = &#34;G-6ED0IWOAJK&#34; This is my settings above, you may just need]]></description>
-</item><item>
-    <title>What is API</title>
-    <link>https://pandax.me/what-is-api/</link>
-    <pubDate>Tue, 01 Mar 2022 18:05:22 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/what-is-api/</guid>
-    <description><![CDATA[What is API Application Programming Interface: allows two applications to talk to each other
-What is REST API REST (Representational State Transfer): A set of functions for developers to perform requests and receive responses using HTTP protocol
-Challenges under API testing API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens) Core components of HTTP request HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content) What is Payload Payload/body is secured input data sent to API In JSON What is JSON JavaScript Object Notation Data format represented as String-text Authentication Techniques used in API&rsquo;s Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth Why API testing is suitable for automation testing API testing is:]]></description>
 </item></channel>
 </rss>
