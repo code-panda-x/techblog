@@ -3,7 +3,14 @@
         <title>All Posts - PandaX</title>
         <link>https://pandax.me/posts/</link>
         <description>All Posts | PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Aug 2023 15:19:27 -0500</lastBuildDate><atom:link href="https://pandax.me/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Aug 2023 19:06:09 -0500</lastBuildDate><atom:link href="https://pandax.me/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>All About Testing</title>
+    <link>https://pandax.me/tests/</link>
+    <pubDate>Thu, 10 Aug 2023 19:06:09 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/tests/</guid>
+    <description><![CDATA[Different Testing Concepts Unit testing: test the smallest piece of code Integration testing: test if different components work together System testing: test every component of an application to make sure that they work as a complete and unified whole Smoke testing: ensure that the critical functions of the program are working Regression testing: determine if code modifications break an application Performance testing: examines the speed, stability, reliability, scalability, and resource usage of a software application under a specified workload Load testing: determines how the software application behaves while being accessed by multiple users simultaneously Stress testing: tests beyond normal operational capacity to test the results More White box testing: Know code and structure of the product to be tested and uses that knowledge to perform the tests Black box testing: Does not know its internal functioning ]]></description>
+</item><item>
     <title>Multithreading</title>
     <link>https://pandax.me/multithreading/</link>
     <pubDate>Sun, 06 Aug 2023 15:19:27 -0500</pubDate>
@@ -88,14 +95,5 @@ machine to machine (todo service is not) Interoperable (not platform dependent) 
 Adhere to Structure: Envelope - Header - Body
 REST The format of request/response is HTTP
 resources A resource has an URI, it is what you want to present in your application]]></description>
-</item><item>
-    <title>Enable Spotlight search on Mac</title>
-    <link>https://pandax.me/enable-spotlight/</link>
-    <pubDate>Sat, 26 Mar 2022 11:45:57 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/enable-spotlight/</guid>
-    <description><![CDATA[Method 1 Navigate to
-System Preferences Spotlights Privacy Add your local disk to the list Remove your local disk from the list The above steps will reindex spotlight on the selected disk Method 2 In terminal run:
-1 2 sudo mdutil -E / sudo mdutil -a -i on Above commands fixed everything for me]]></description>
 </item></channel>
 </rss>

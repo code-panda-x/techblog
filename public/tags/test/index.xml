@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Test - Tag - PandaX</title>
+        <link>https://pandax.me/tags/test/</link>
+        <description>Test - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Aug 2023 19:06:09 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/test/" rel="self" type="application/rss+xml" /><item>
+    <title>All About Testing</title>
+    <link>https://pandax.me/tests/</link>
+    <pubDate>Thu, 10 Aug 2023 19:06:09 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/tests/</guid>
+    <description><![CDATA[Different Testing Concepts Unit testing: test the smallest piece of code Integration testing: test if different components work together System testing: test every component of an application to make sure that they work as a complete and unified whole Smoke testing: ensure that the critical functions of the program are working Regression testing: determine if code modifications break an application Performance testing: examines the speed, stability, reliability, scalability, and resource usage of a software application under a specified workload Load testing: determines how the software application behaves while being accessed by multiple users simultaneously Stress testing: tests beyond normal operational capacity to test the results More White box testing: Know code and structure of the product to be tested and uses that knowledge to perform the tests Black box testing: Does not know its internal functioning ]]></description>
+</item></channel>
+</rss>

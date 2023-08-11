@@ -3,7 +3,14 @@
         <title>General Tech - Category - PandaX</title>
         <link>https://pandax.me/categories/general-tech/</link>
         <description>General Tech - Category - PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 06 Aug 2023 15:19:27 -0500</lastBuildDate><atom:link href="https://pandax.me/categories/general-tech/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Aug 2023 19:06:09 -0500</lastBuildDate><atom:link href="https://pandax.me/categories/general-tech/" rel="self" type="application/rss+xml" /><item>
+    <title>All About Testing</title>
+    <link>https://pandax.me/tests/</link>
+    <pubDate>Thu, 10 Aug 2023 19:06:09 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/tests/</guid>
+    <description><![CDATA[Different Testing Concepts Unit testing: test the smallest piece of code Integration testing: test if different components work together System testing: test every component of an application to make sure that they work as a complete and unified whole Smoke testing: ensure that the critical functions of the program are working Regression testing: determine if code modifications break an application Performance testing: examines the speed, stability, reliability, scalability, and resource usage of a software application under a specified workload Load testing: determines how the software application behaves while being accessed by multiple users simultaneously Stress testing: tests beyond normal operational capacity to test the results More White box testing: Know code and structure of the product to be tested and uses that knowledge to perform the tests Black box testing: Does not know its internal functioning ]]></description>
+</item><item>
     <title>Multithreading</title>
     <link>https://pandax.me/multithreading/</link>
     <pubDate>Sun, 06 Aug 2023 15:19:27 -0500</pubDate>
@@ -84,12 +91,5 @@ G-6ED0IWOAJK Get gtag js script
     <description><![CDATA[What is API Application Programming Interface: allows two applications to talk to each other
 What is REST API REST (Representational State Transfer): A set of functions for developers to perform requests and receive responses using HTTP protocol
 Challenges under API testing API Documentation (need endpoint, parameters, resources, data) Access to DB (Validate response by comparing response to DB) Authorization overhead (Handle tokens) Core components of HTTP request HTTP request methods URI Resources and parameters Request header (JSON, XML) Request body (message content) What is Payload Payload/body is secured input data sent to API In JSON What is JSON JavaScript Object Notation Data format represented as String-text Authentication Techniques used in API&rsquo;s Session/Cookie based Authentication Basic Authentication Digest Authentication OAuth Why API testing is suitable for automation testing API testing is:]]></description>
-</item><item>
-    <title>Rest API with Express.JS</title>
-    <link>https://pandax.me/express-restapi/</link>
-    <pubDate>Sun, 20 Feb 2022 13:37:22 -0600</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/express-restapi/</guid>
-    <description><![CDATA[To include packages/files Include packages: packages are from package.json const express = require('express'); const router = express.Router(); router.get('/', (req, res) =&gt; res.send('Profile route')); const jwt = require('jsonwebtoken'); Inlucde route/file: 1 2 3 4 // db.js module.exports = connectDB; // In server.js const connectDB = require(&#39;./config/db&#39;) connectDB(); File return 1 2 module.exports = connectDB; module.exports = router; Try catch 1 2 3 4 5 6 7 8 9 10 11 12 13 const connectDB = async () =&gt; { try{ await mongoose.]]></description>
 </item></channel>
 </rss>
