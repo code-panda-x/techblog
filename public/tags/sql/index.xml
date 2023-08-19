@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>SQL - Tag - PandaX</title>
+        <link>https://pandax.me/tags/sql/</link>
+        <description>SQL - Tag - PandaX</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 19 Aug 2023 11:18:36 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/sql/" rel="self" type="application/rss+xml" /><item>
+    <title>Sql Cheatsheet</title>
+    <link>https://pandax.me/sql/</link>
+    <pubDate>Sat, 19 Aug 2023 11:18:36 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/sql/</guid>
+    <description><![CDATA[SQL queries SQL Summary: https://www.w3schools.com/sql/sql_examples.asp
+SQL operations: https://www.w3schools.com/sql/sql_operators.asp
+Select 1 2 3 4 select column from table select distinct column from table select distinct id from table Where 1 2 3 4 5 SELECT * FROM Customers WHERE Country=&#39;Mexico&#39; SELECT * FROM Customers WHERE CustomerID=1 AND, OR and NOT Operators 1 2 3 4 5 SELECT * FROM Customers WHERE Country=&#39;Germany&#39; AND (City=&#39;Berlin&#39; OR City=&#39;München&#39;); SELECT * FROM Customers WHERE NOT Country=&#39;Germany&#39; AND NOT Country=&#39;USA&#39;; ORDER BY This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName in descending order:]]></description>
+</item></channel>
+</rss>

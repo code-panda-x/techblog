@@ -3,9 +3,18 @@
         <title>PandaX</title>
         <link>https://pandax.me/</link>
         <description>A Blog about Tech, Life, and Productivity</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 10 Aug 2023 19:06:09 -0500</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 19 Aug 2023 11:18:36 -0500</lastBuildDate>
             <atom:link href="https://pandax.me/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Sql Cheatsheet</title>
+    <link>https://pandax.me/sql/</link>
+    <pubDate>Sat, 19 Aug 2023 11:18:36 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/sql/</guid>
+    <description><![CDATA[SQL queries SQL Summary: https://www.w3schools.com/sql/sql_examples.asp
+SQL operations: https://www.w3schools.com/sql/sql_operators.asp
+Select 1 2 3 4 select column from table select distinct column from table select distinct id from table Where 1 2 3 4 5 SELECT * FROM Customers WHERE Country=&#39;Mexico&#39; SELECT * FROM Customers WHERE CustomerID=1 AND, OR and NOT Operators 1 2 3 4 5 SELECT * FROM Customers WHERE Country=&#39;Germany&#39; AND (City=&#39;Berlin&#39; OR City=&#39;München&#39;); SELECT * FROM Customers WHERE NOT Country=&#39;Germany&#39; AND NOT Country=&#39;USA&#39;; ORDER BY This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName in descending order:]]></description>
+</item><item>
     <title>All About Testing</title>
     <link>https://pandax.me/tests/</link>
     <pubDate>Thu, 10 Aug 2023 19:06:09 -0500</pubDate>
@@ -85,17 +94,5 @@ Docker image explains what your environment looks like Docker image contains eve
     <guid>https://pandax.me/microservices/</guid>
     <description><![CDATA[MicroService Take every app function and put it in its own service Runs in its own container Communicate via APIs But if each microservice is implemented in different languages/environment, how do we deploy? Deployment: Use Docker ! Put each microservice into containers
 Pros Flexibility (each microservice can be built in different languages/technologies) Less risk in change Independent scaling Faster release cycles Monolith Server-side systme based on single application Pros Good for small team Less complex Less duplication Run fast Cons Highly dependent (single point of failure) Language/Framework Growth Scaling issue Complex deployment Spring Boot Goal Enable quickly built applications Provide common non-functional features Not Spring boot does NOT generate code Spring boot is NOT an application server or a web server Features Quick starter projects with auto configuration]]></description>
-</item><item>
-    <title>Web Service</title>
-    <link>https://pandax.me/web-service/</link>
-    <pubDate>Mon, 18 Apr 2022 20:17:54 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/web-service/</guid>
-    <description><![CDATA[What is web service Software system designed to support interoperable machine-to-machine interaction over a network.
-Three keys:
-machine to machine (todo service is not) Interoperable (not platform dependent) Over a network Different kinds of web services SOAP Use XML as exchange format
-Adhere to Structure: Envelope - Header - Body
-REST The format of request/response is HTTP
-resources A resource has an URI, it is what you want to present in your application]]></description>
 </item></channel>
 </rss>
