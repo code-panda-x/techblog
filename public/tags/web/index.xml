@@ -3,7 +3,18 @@
         <title>Web - Tag - PandaX</title>
         <link>https://pandax.me/tags/web/</link>
         <description>Web - Tag - PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 23 Jul 2023 13:45:28 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/web/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Nov 2023 18:43:12 -0500</lastBuildDate><atom:link href="https://pandax.me/tags/web/" rel="self" type="application/rss+xml" /><item>
+    <title>HTML CheatSheet</title>
+    <link>https://pandax.me/html/</link>
+    <pubDate>Wed, 01 Nov 2023 18:43:12 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/html/</guid>
+    <description><![CDATA[HTML Definition HTML is the standard markup language for Web pages
+HTML is NOT a programming language
+HTML Elements Header 1 2 &lt;h1&gt; header1&lt;/h1&gt; &lt;h2&gt; header2&lt;/h2&gt; Paragraph &lt;p&gt;Text here&lt;/p&gt;
+Change text fonts:
+1 2 3 &lt;i&gt;Italic&lt;/i&gt; &lt;u&gt;Underline&lt;/u&gt; &lt;b&gt;Bold&lt;/b&gt; Section 1 2 3 &lt;section&gt; elements... &lt;/section&gt; Lists 1 2 3 4 5 6 7 8 9 10 11 Unordered list &lt;ul&gt; &lt;li&gt; Apple &lt;/li&gt; &lt;li&gt; Banana &lt;/li&gt; &lt;/ul&gt; Ordered list &lt;ol&gt; &lt;li&gt; Apple &lt;/li&gt; &lt;li&gt; Banana &lt;/li&gt; &lt;/ol&gt; Links 1 &lt;a href=&#34;index.]]></description>
+</item><item>
     <title>Ssr vs Csr</title>
     <link>https://pandax.me/ssr-vs-csr/</link>
     <pubDate>Sun, 23 Jul 2023 13:45:28 -0500</pubDate>

@@ -3,7 +3,18 @@
         <title>All Posts - PandaX</title>
         <link>https://pandax.me/posts/</link>
         <description>All Posts | PandaX</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sat, 19 Aug 2023 11:18:36 -0500</lastBuildDate><atom:link href="https://pandax.me/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 01 Nov 2023 18:43:12 -0500</lastBuildDate><atom:link href="https://pandax.me/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>HTML CheatSheet</title>
+    <link>https://pandax.me/html/</link>
+    <pubDate>Wed, 01 Nov 2023 18:43:12 -0500</pubDate>
+    <author>Author</author>
+    <guid>https://pandax.me/html/</guid>
+    <description><![CDATA[HTML Definition HTML is the standard markup language for Web pages
+HTML is NOT a programming language
+HTML Elements Header 1 2 &lt;h1&gt; header1&lt;/h1&gt; &lt;h2&gt; header2&lt;/h2&gt; Paragraph &lt;p&gt;Text here&lt;/p&gt;
+Change text fonts:
+1 2 3 &lt;i&gt;Italic&lt;/i&gt; &lt;u&gt;Underline&lt;/u&gt; &lt;b&gt;Bold&lt;/b&gt; Section 1 2 3 &lt;section&gt; elements... &lt;/section&gt; Lists 1 2 3 4 5 6 7 8 9 10 11 Unordered list &lt;ul&gt; &lt;li&gt; Apple &lt;/li&gt; &lt;li&gt; Banana &lt;/li&gt; &lt;/ul&gt; Ordered list &lt;ol&gt; &lt;li&gt; Apple &lt;/li&gt; &lt;li&gt; Banana &lt;/li&gt; &lt;/ol&gt; Links 1 &lt;a href=&#34;index.]]></description>
+</item><item>
     <title>Sql Cheatsheet</title>
     <link>https://pandax.me/sql/</link>
     <pubDate>Sat, 19 Aug 2023 11:18:36 -0500</pubDate>
@@ -84,13 +95,5 @@ VM Docker Docker is a technology for creating and running containers, so we don&
 Docker allows different machines to share the same environments by using sharing docker image and create same containers
 Docker images DockerFile + App files &ndash;&gt; Docker &ndash;&gt; Image (shared to others)
 Docker image explains what your environment looks like Docker image contains everything a container needs to run:]]></description>
-</item><item>
-    <title>Microservices vs Monolith</title>
-    <link>https://pandax.me/microservices/</link>
-    <pubDate>Fri, 22 Apr 2022 17:35:01 -0500</pubDate>
-    <author>Author</author>
-    <guid>https://pandax.me/microservices/</guid>
-    <description><![CDATA[MicroService Take every app function and put it in its own service Runs in its own container Communicate via APIs But if each microservice is implemented in different languages/environment, how do we deploy? Deployment: Use Docker ! Put each microservice into containers
-Pros Flexibility (each microservice can be built in different languages/technologies) Less risk in change Independent scaling Faster release cycles Monolith Server-side systme based on single application Pros Good for small team Less complex Less duplication Run fast Cons Highly dependent (single point of failure) Language/Framework Growth Scaling issue Complex deployment Spring Boot Goal Enable quickly built applications Provide common non-functional features Not Spring boot does NOT generate code Spring boot is NOT an application server or a web server Features Quick starter projects with auto configuration]]></description>
 </item></channel>
 </rss>
